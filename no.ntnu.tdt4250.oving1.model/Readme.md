@@ -7,3 +7,5 @@ This ECore model will model NTNU studies for
 
 Open the project in _'Eclipse for DSL Developers'_ with some extra EMF plugins.
 
+The documentation/tutorial for Object Constraint Language (OCL) are found at https://help.eclipse.org/2019-06/index.jsp
+
