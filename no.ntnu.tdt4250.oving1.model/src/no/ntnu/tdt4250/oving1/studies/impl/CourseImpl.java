@@ -27,246 +27,246 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * @generated
  */
 public class CourseImpl extends MinimalEObjectImpl.Container implements Course {
-    /**
-     * The default value of the '{@link #getName() <em>Name</em>}' attribute. <!--
-     * begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @see #getName()
-     * @generated
-     * @ordered
-     */
-    protected static final String NAME_EDEFAULT = null;
+	/**
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_EDEFAULT = null;
 
-    /**
-     * The cached value of the '{@link #getName() <em>Name</em>}' attribute. <!--
-     * begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @see #getName()
-     * @generated
-     * @ordered
-     */
-    protected String name = NAME_EDEFAULT;
+	/**
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String name = NAME_EDEFAULT;
 
-    /**
-     * The default value of the '{@link #getCode() <em>Code</em>}' attribute. <!--
-     * begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @see #getCode()
-     * @generated
-     * @ordered
-     */
-    protected static final String CODE_EDEFAULT = null;
+	/**
+	 * The default value of the '{@link #getCode() <em>Code</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #getCode()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String CODE_EDEFAULT = null;
 
-    /**
-     * The cached value of the '{@link #getCode() <em>Code</em>}' attribute. <!--
-     * begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @see #getCode()
-     * @generated
-     * @ordered
-     */
-    protected String code = CODE_EDEFAULT;
+	/**
+	 * The cached value of the '{@link #getCode() <em>Code</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #getCode()
+	 * @generated
+	 * @ordered
+	 */
+	protected String code = CODE_EDEFAULT;
 
-    /**
-     * The default value of the '{@link #getStudyPoints() <em>Study Points</em>}'
-     * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @see #getStudyPoints()
-     * @generated
-     * @ordered
-     */
-    protected static final float STUDY_POINTS_EDEFAULT = 0.0F;
+	/**
+	 * The default value of the '{@link #getStudyPoints() <em>Study Points</em>}'
+	 * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #getStudyPoints()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final float STUDY_POINTS_EDEFAULT = 0.0F;
 
-    /**
-     * The cached value of the '{@link #getStudyPoints() <em>Study Points</em>}'
-     * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @see #getStudyPoints()
-     * @generated
-     * @ordered
-     */
-    protected float studyPoints = STUDY_POINTS_EDEFAULT;
+	/**
+	 * The cached value of the '{@link #getStudyPoints() <em>Study Points</em>}'
+	 * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #getStudyPoints()
+	 * @generated
+	 * @ordered
+	 */
+	protected float studyPoints = STUDY_POINTS_EDEFAULT;
 
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    protected CourseImpl() {
-        super();
-    }
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	protected CourseImpl() {
+		super();
+	}
 
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    @Override
-    protected EClass eStaticClass() {
-        return StudiesPackage.Literals.COURSE;
-    }
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return StudiesPackage.Literals.COURSE;
+	}
 
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    public String getName() {
-        return name;
-    }
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	public String getName() {
+		return name;
+	}
 
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    public void setName(String newName) {
-        String oldName = name;
-        name = newName;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, StudiesPackage.COURSE__NAME, oldName, name));
-    }
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, StudiesPackage.COURSE__NAME, oldName, name));
+	}
 
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    public String getCode() {
-        return code;
-    }
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	public String getCode() {
+		return code;
+	}
 
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    public void setCode(String newCode) {
-        String oldCode = code;
-        code = newCode;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, StudiesPackage.COURSE__CODE, oldCode, code));
-    }
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	public void setCode(String newCode) {
+		String oldCode = code;
+		code = newCode;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, StudiesPackage.COURSE__CODE, oldCode, code));
+	}
 
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    public float getStudyPoints() {
-        return studyPoints;
-    }
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	public float getStudyPoints() {
+		return studyPoints;
+	}
 
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    public void setStudyPoints(float newStudyPoints) {
-        float oldStudyPoints = studyPoints;
-        studyPoints = newStudyPoints;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, StudiesPackage.COURSE__STUDY_POINTS, oldStudyPoints,
-                    studyPoints));
-    }
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	public void setStudyPoints(float newStudyPoints) {
+		float oldStudyPoints = studyPoints;
+		studyPoints = newStudyPoints;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, StudiesPackage.COURSE__STUDY_POINTS, oldStudyPoints,
+					studyPoints));
+	}
 
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    @Override
-    public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-        case StudiesPackage.COURSE__NAME:
-            return getName();
-        case StudiesPackage.COURSE__CODE:
-            return getCode();
-        case StudiesPackage.COURSE__STUDY_POINTS:
-            return getStudyPoints();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+		case StudiesPackage.COURSE__NAME:
+			return getName();
+		case StudiesPackage.COURSE__CODE:
+			return getCode();
+		case StudiesPackage.COURSE__STUDY_POINTS:
+			return getStudyPoints();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    @Override
-    public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-        case StudiesPackage.COURSE__NAME:
-            setName((String) newValue);
-            return;
-        case StudiesPackage.COURSE__CODE:
-            setCode((String) newValue);
-            return;
-        case StudiesPackage.COURSE__STUDY_POINTS:
-            setStudyPoints((Float) newValue);
-            return;
-        }
-        super.eSet(featureID, newValue);
-    }
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+		case StudiesPackage.COURSE__NAME:
+			setName((String) newValue);
+			return;
+		case StudiesPackage.COURSE__CODE:
+			setCode((String) newValue);
+			return;
+		case StudiesPackage.COURSE__STUDY_POINTS:
+			setStudyPoints((Float) newValue);
+			return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    @Override
-    public void eUnset(int featureID) {
-        switch (featureID) {
-        case StudiesPackage.COURSE__NAME:
-            setName(NAME_EDEFAULT);
-            return;
-        case StudiesPackage.COURSE__CODE:
-            setCode(CODE_EDEFAULT);
-            return;
-        case StudiesPackage.COURSE__STUDY_POINTS:
-            setStudyPoints(STUDY_POINTS_EDEFAULT);
-            return;
-        }
-        super.eUnset(featureID);
-    }
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+		case StudiesPackage.COURSE__NAME:
+			setName(NAME_EDEFAULT);
+			return;
+		case StudiesPackage.COURSE__CODE:
+			setCode(CODE_EDEFAULT);
+			return;
+		case StudiesPackage.COURSE__STUDY_POINTS:
+			setStudyPoints(STUDY_POINTS_EDEFAULT);
+			return;
+		}
+		super.eUnset(featureID);
+	}
 
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    @Override
-    public boolean eIsSet(int featureID) {
-        switch (featureID) {
-        case StudiesPackage.COURSE__NAME:
-            return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-        case StudiesPackage.COURSE__CODE:
-            return CODE_EDEFAULT == null ? code != null : !CODE_EDEFAULT.equals(code);
-        case StudiesPackage.COURSE__STUDY_POINTS:
-            return studyPoints != STUDY_POINTS_EDEFAULT;
-        }
-        return super.eIsSet(featureID);
-    }
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+		case StudiesPackage.COURSE__NAME:
+			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+		case StudiesPackage.COURSE__CODE:
+			return CODE_EDEFAULT == null ? code != null : !CODE_EDEFAULT.equals(code);
+		case StudiesPackage.COURSE__STUDY_POINTS:
+			return studyPoints != STUDY_POINTS_EDEFAULT;
+		}
+		return super.eIsSet(featureID);
+	}
 
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    @Override
-    public String toString() {
-        if (eIsProxy())
-            return super.toString();
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy())
+			return super.toString();
 
-        StringBuilder result = new StringBuilder(super.toString());
-        result.append(" (name: ");
-        result.append(name);
-        result.append(", code: ");
-        result.append(code);
-        result.append(", studyPoints: ");
-        result.append(studyPoints);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuilder result = new StringBuilder(super.toString());
+		result.append(" (name: ");
+		result.append(name);
+		result.append(", code: ");
+		result.append(code);
+		result.append(", studyPoints: ");
+		result.append(studyPoints);
+		result.append(')');
+		return result.toString();
+	}
 
 } // CourseImpl

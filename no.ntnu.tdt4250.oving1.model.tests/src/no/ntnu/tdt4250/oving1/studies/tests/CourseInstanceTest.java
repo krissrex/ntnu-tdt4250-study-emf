@@ -4,18 +4,15 @@ package no.ntnu.tdt4250.oving1.studies.tests;
 
 import static org.junit.Assert.assertThat;
 
-import org.eclipse.emf.ecore.impl.EPackageRegistryImpl;
 import org.hamcrest.core.Is;
 
 import junit.framework.TestCase;
 
 import junit.textui.TestRunner;
-import no.ntnu.tdt4250.oving1.acceleo.query.AqlTestingMain;
 import no.ntnu.tdt4250.oving1.studies.Course;
 import no.ntnu.tdt4250.oving1.studies.CourseInstance;
 import no.ntnu.tdt4250.oving1.studies.SemesterCode;
 import no.ntnu.tdt4250.oving1.studies.StudiesFactory;
-import no.ntnu.tdt4250.oving1.studies.impl.StudiesPackageImpl;
 
 /**
  * <!-- begin-user-doc --> A test case for the model object '<em><b>Course
@@ -23,31 +20,28 @@ import no.ntnu.tdt4250.oving1.studies.impl.StudiesPackageImpl;
  * <p>
  * The following features are tested:
  * <ul>
- * <li>{@link no.ntnu.tdt4250.oving1.studies.CourseInstance#getInstanceName()
- * <em>Instance Name</em>}</li>
+ *   <li>{@link no.ntnu.tdt4250.oving1.studies.CourseInstance#getInstanceName() <em>Instance Name</em>}</li>
  * </ul>
  * </p>
- * 
  * @generated
  */
 public class CourseInstanceTest extends TestCase {
 
     /**
-     * The fixture for this Course Instance test case. <!-- begin-user-doc --> <!--
+	 * The fixture for this Course Instance test case.
+	 * <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
-     * @generated
-     */
+	 * @generated
+	 */
     protected CourseInstance fixture = null;
 
     /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
     public static void main(String[] args) {
-        TestRunner.run(CourseInstanceTest.class);
-    }
+		TestRunner.run(CourseInstanceTest.class);
+	}
 
     /**
      * Constructs a new Course Instance test case with the given name. <!--
@@ -56,28 +50,28 @@ public class CourseInstanceTest extends TestCase {
      * @generated
      */
     public CourseInstanceTest(String name) {
-        super(name);
-    }
+		super(name);
+	}
 
     /**
-     * Sets the fixture for this Course Instance test case. <!-- begin-user-doc -->
+	 * Sets the fixture for this Course Instance test case.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
-     * @generated
-     */
+	 * @generated
+	 */
     protected void setFixture(CourseInstance fixture) {
-        this.fixture = fixture;
-    }
+		this.fixture = fixture;
+	}
 
     /**
-     * Returns the fixture for this Course Instance test case. <!-- begin-user-doc
+	 * Returns the fixture for this Course Instance test case.
+	 * <!-- begin-user-doc
      * --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
+	 * @generated
+	 */
     protected CourseInstance getFixture() {
-        return fixture;
-    }
+		return fixture;
+	}
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -91,15 +85,14 @@ public class CourseInstanceTest extends TestCase {
     }
 
     /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @see junit.framework.TestCase#tearDown()
-     * @generated
-     */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @see junit.framework.TestCase#tearDown()
+	 * @generated
+	 */
     @Override
     protected void tearDown() throws Exception {
-        setFixture(null);
-    }
+		setFixture(null);
+	}
 
 //	public void testAqlWorks() {
 //		QueryEvaluationEngine engine = new QueryEvaluationEngine(queryEnvironment);

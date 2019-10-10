@@ -27,16 +27,16 @@ import org.eclipse.emf.ecore.EObject;
  * @generated
  */
 public interface Semester extends EObject {
-    /**
-     * Returns the value of the '<em><b>Courses</b></em>' reference list. The list
-     * contents are of type {@link no.ntnu.tdt4250.oving1.studies.CourseInstance}.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @return the value of the '<em>Courses</em>' reference list.
-     * @see no.ntnu.tdt4250.oving1.studies.StudiesPackage#getSemester_Courses()
-     * @model required="true"
-     * @generated
-     */
-    EList<CourseInstance> getCourses();
+	/**
+	 * Returns the value of the '<em><b>Courses</b></em>' reference list. The list
+	 * contents are of type {@link no.ntnu.tdt4250.oving1.studies.CourseInstance}.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @return the value of the '<em>Courses</em>' reference list.
+	 * @see no.ntnu.tdt4250.oving1.studies.StudiesPackage#getSemester_Courses()
+	 * @model required="true"
+	 * @generated
+	 */
+	EList<CourseInstance> getCourses();
 
 } // Semester
