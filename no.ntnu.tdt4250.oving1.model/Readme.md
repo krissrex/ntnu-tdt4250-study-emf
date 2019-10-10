@@ -9,8 +9,9 @@ Open the project in _'Eclipse for DSL Developers'_ with some extra EMF plugins.
 
 The documentation/tutorial for Object Constraint Language (OCL) are found at https://help.eclipse.org/2019-06/index.jsp  
 For the OclInEcore plugin: https://wiki.eclipse.org/OCL/OCLinEcore#Registration  
-Some helpful stuff at [https://wiki.eclipse.org/EMF/FAQ#I_want_to_use_EMF.2C_SDO.2C_or_XSD_in_my_standalone_project.2C_or_include_only_a_working_subset_of_the_code._What_libraries_.28jar_files.29_do_I_need_in_my_CLASSPATH.3F](eclipse wiki).  
-Acceleo AQL documentation: https://www.eclipse.org/acceleo/documentation/
+Some helpful stuff at 
+[https://wiki.eclipse.org/EMF/FAQ#I_want_to_use_EMF.2C_SDO.2C_or_XSD_in_my_standalone_project.2C_or_include_only_a_working_subset_of_the_code._What_libraries_.28jar_files.29_do_I_need_in_my_CLASSPATH.3F](eclipse wiki).  
+Acceleo AQL documentation: https://www.eclipse.org/acceleo/documentation/  
 
 
 ![uml of ecore](docs/studies.ecore.png)
