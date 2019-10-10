@@ -37,8 +37,9 @@ class StudiesToHtmlGeneratorTest {
 	@Test
 	void shouldGenerateHtmlFromModel() throws Exception {
 		// Given
-		File targetFolder = new File("./.generated/test");
+		File targetFolder = new File("generated/test");
 		targetFolder.mkdirs();
+		System.out.println("Generating in folder: " + targetFolder.getAbsolutePath().toString());
 		
 		// When
 		StudiesToHtmlGenerator generator = new StudiesToHtmlGenerator(uni, targetFolder, Collections.emptyList());

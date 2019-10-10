@@ -24,6 +24,8 @@ import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 
+import no.ntnu.tdt4250.oving1.studies.StudiesPackage;
+
 /**
  * Entry point of the 'StudiesToHtmlGenerator' generation module.
  *
@@ -335,7 +337,7 @@ public class StudiesToHtmlGenerator extends AbstractAcceleoGenerator {
      * 
      * @param resourceSet
      *            The resource set which registry has to be updated.
-     * @generated
+     * @generated NOT
      */
     @Override
     public void registerPackages(ResourceSet resourceSet) {
