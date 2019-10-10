@@ -1,0 +1,23 @@
+[comment encoding = UTF-8 /]
+[module studiesToHtmlGenerator('http://www.eclipse.org/emf/2002/Ecore', 'platform:/plugin/no.ntnu.tdt4250.oving1.model/model/studies.ecore')]
+
+
+[template public generateHtml(university : University)]
+
+	[comment @main /]
+	[file (university.name.concat('.html'), false, 'UTF-8')]
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>[university.name/] Courses</title>
+</head>
+
+<body>
+
+<h1>Courses</h1>
+
+
+</body>
+</html>
+	[/file]
+[/template]
