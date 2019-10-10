@@ -4,17 +4,14 @@ package no.ntnu.tdt4250.oving1.studies.tests;
 
 import static org.junit.Assert.assertThat;
 
-import org.eclipse.acceleo.query.delegates.AQLValidationDelegate;
 import org.eclipse.emf.common.util.Diagnostic;
-import org.eclipse.emf.ecore.EValidator.ValidationDelegate;
 import org.eclipse.emf.ecore.util.Diagnostician;
 import org.hamcrest.core.Is;
-import org.junit.Test;
-
 import junit.framework.TestCase;
 import junit.textui.TestRunner;
 import no.ntnu.tdt4250.oving1.studies.Course;
 import no.ntnu.tdt4250.oving1.studies.StudiesFactory;
+import no.ntnu.tdt4250.oving1.studies.impl.StudiesPackageImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -80,7 +77,6 @@ public class CourseTest extends TestCase {
 	@Override
 	protected void setUp() throws Exception {
 		setFixture(StudiesFactory.eINSTANCE.createCourse());
-		ValidationDelegate.Registry.INSTANCE.put("http://www.eclipse.org/acceleo/query/1.0", new AQLValidationDelegate());
 	}
 
 	/**

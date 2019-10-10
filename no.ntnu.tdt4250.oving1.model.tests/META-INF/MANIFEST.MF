@@ -13,5 +13,6 @@ Require-Bundle: org.eclipse.core.runtime,
  no.ntnu.tdt4250.oving1.model;visibility:=reexport,
  org.eclipse.emf.ecore.xmi;visibility:=reexport,
  org.junit;visibility:=reexport
+Eclipse-LazyStart: true
 Bundle-ActivationPolicy: lazy
 Import-Package: org.eclipse.acceleo.query.delegates;version="5.0.1"

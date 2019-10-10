@@ -15,21 +15,21 @@ import org.eclipse.emf.ecore.EcorePackage;
 
 public class AqlTestingMain {
 
-	public static void main(String[] args) {
-		testAqlWorks();
-	}
-	
-	public static void testAqlWorks() {
-		IQueryEnvironment env = Query.newEnvironmentWithDefaultServices(null);
-		IQueryEvaluationEngine engine = QueryEvaluation.newEngine(env);
+    public static void main(String[] args) {
+        testAqlWorks();
+    }
 
-		IQueryBuilderEngine builder = new QueryBuilderEngine(env);
-		AstResult astResult = builder.build("self.name");
+    public static void testAqlWorks() {
+        IQueryEnvironment env = Query.newEnvironmentWithDefaultServices(null);
+        IQueryEvaluationEngine engine = QueryEvaluation.newEngine(env);
 
-		Map<String, Object> variables = new HashMap<>();
-		variables.put("self", EcorePackage.eINSTANCE);
-		EvaluationResult evaluationResult = engine.eval(astResult, variables);
+        IQueryBuilderEngine builder = new QueryBuilderEngine(env);
+        AstResult astResult = builder.build("self.name");
 
-		System.out.println(evaluationResult.getResult());
-	}
+        Map<String, Object> variables = new HashMap<>();
+        variables.put("self", EcorePackage.eINSTANCE);
+        EvaluationResult evaluationResult = engine.eval(astResult, variables);
+
+        System.out.println(evaluationResult.getResult());
+    }
 }
