@@ -3,7 +3,7 @@
     xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/no.ntnu.tdt4250.oving1.model/src" modelPluginID="no.ntnu.tdt4250.oving1.model"
     modelName="Studies" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
-    operationReflection="true" importOrganizing="true">
+    runtimeVersion="2.18" operationReflection="true" importOrganizing="true">
   <foreignModel>studies.ecore</foreignModel>
   <genPackages prefix="Studies" basePackage="no.ntnu.tdt4250.oving1" disposableProviderFactory="true"
       ecorePackage="studies.ecore#/">
