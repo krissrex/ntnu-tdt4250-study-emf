@@ -47,7 +47,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="code" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="SemesterCode" instanceTypeName="SemesterCode">
+  <eClassifiers xsi:type="ecore:EEnum" name="SemesterCode">
     <eLiterals name="Spring"/>
     <eLiterals name="Autumn" value="1"/>
   </eClassifiers>
@@ -89,7 +89,7 @@
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="courses" lowerBound="1"
         upperBound="-1" eType="#//CourseInstance"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="semesterCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="studyYearSemester" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
         changeable="false" volatile="true" transient="true" derived="true">
       <eAnnotations source="http://www.eclipse.org/acceleo/query/1.0">
         <details key="derivation" value="if self.eContainmentFeature() &lt;> null and self.eContainmentFeature().name = 'autumnSemester' then 'Autumn' else 'Spring' endif"/>

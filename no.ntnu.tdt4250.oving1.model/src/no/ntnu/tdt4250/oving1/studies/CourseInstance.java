@@ -73,7 +73,7 @@ public interface CourseInstance extends EObject {
 	 * @see no.ntnu.tdt4250.oving1.studies.SemesterCode
 	 * @see #setSemester(SemesterCode)
 	 * @see no.ntnu.tdt4250.oving1.studies.StudiesPackage#getCourseInstance_Semester()
-	 * @model dataType="no.ntnu.tdt4250.oving1.studies.SemesterCode" required="true"
+	 * @model required="true"
 	 * @generated
 	 */
 	SemesterCode getSemester();

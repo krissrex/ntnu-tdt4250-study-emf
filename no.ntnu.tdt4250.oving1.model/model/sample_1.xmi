@@ -82,6 +82,27 @@
     <courseInstances
         year="2017"/>
   </courses>
+  <courses name="Introduksjon til kunstig intelligens"
+      code="TDT4136"
+      studyPoints="7.5">
+    <courseInstances
+        year="2018"
+        semester="Autumn"/>
+  </courses>
+  <courses name="Matematikk 4D"
+      code="TMA4135"
+      studyPoints="7.5">
+    <courseInstances
+        year="2018"
+        semester="Autumn"/>
+  </courses>
+  <courses name="Webutvikling"
+      code="IT2810"
+      studyPoints="7.5">
+    <courseInstances
+        year="2018"
+        semester="Autumn"/>
+  </courses>
   <studies name="Datateknologi"
       code="MTDT">
     <studyInstances
@@ -98,7 +119,7 @@
                 programName="Interaksjonsdesign og spillteknologi"/>
             <springSemester/>
             <autumnSemester
-                courses="//@courses.3/@courseInstances.0"/>
+                courses="//@courses.3/@courseInstances.0 //@courses.12/@courseInstances.0 //@courses.13/@courseInstances.0 //@courses.14/@courseInstances.0"/>
           </nextYear>
           <nextYear
               programName="Algoritmer og datamaskiner"/>

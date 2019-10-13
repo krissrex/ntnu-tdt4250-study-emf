@@ -24,7 +24,7 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  * </p>
  * <ul>
  *   <li>{@link no.ntnu.tdt4250.oving1.studies.impl.SemesterImpl#getCourses <em>Courses</em>}</li>
- *   <li>{@link no.ntnu.tdt4250.oving1.studies.impl.SemesterImpl#getSemesterCode <em>Semester Code</em>}</li>
+ *   <li>{@link no.ntnu.tdt4250.oving1.studies.impl.SemesterImpl#getStudyYearSemester <em>Study Year Semester</em>}</li>
  * </ul>
  *
  * @generated
@@ -40,14 +40,14 @@ public class SemesterImpl extends MinimalEObjectImpl.Container implements Semest
 	protected EList<CourseInstance> courses;
 
 	/**
-	 * The cached setting delegate for the '{@link #getSemesterCode() <em>Semester Code</em>}' attribute.
+	 * The cached setting delegate for the '{@link #getStudyYearSemester() <em>Study Year Semester</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSemesterCode()
+	 * @see #getStudyYearSemester()
 	 * @generated
 	 * @ordered
 	 */
-	protected EStructuralFeature.Internal.SettingDelegate SEMESTER_CODE__ESETTING_DELEGATE = ((EStructuralFeature.Internal)StudiesPackage.Literals.SEMESTER__SEMESTER_CODE).getSettingDelegate();
+	protected EStructuralFeature.Internal.SettingDelegate STUDY_YEAR_SEMESTER__ESETTING_DELEGATE = ((EStructuralFeature.Internal)StudiesPackage.Literals.SEMESTER__STUDY_YEAR_SEMESTER).getSettingDelegate();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -83,8 +83,8 @@ public class SemesterImpl extends MinimalEObjectImpl.Container implements Semest
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getSemesterCode() {
-		return (String)SEMESTER_CODE__ESETTING_DELEGATE.dynamicGet(this, null, 0, true, false);
+	public String getStudyYearSemester() {
+		return (String)STUDY_YEAR_SEMESTER__ESETTING_DELEGATE.dynamicGet(this, null, 0, true, false);
 	}
 
 	/**
@@ -96,8 +96,8 @@ public class SemesterImpl extends MinimalEObjectImpl.Container implements Semest
 		switch (featureID) {
 			case StudiesPackage.SEMESTER__COURSES:
 				return getCourses();
-			case StudiesPackage.SEMESTER__SEMESTER_CODE:
-				return getSemesterCode();
+			case StudiesPackage.SEMESTER__STUDY_YEAR_SEMESTER:
+				return getStudyYearSemester();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -141,8 +141,8 @@ public class SemesterImpl extends MinimalEObjectImpl.Container implements Semest
 		switch (featureID) {
 			case StudiesPackage.SEMESTER__COURSES:
 				return courses != null && !courses.isEmpty();
-			case StudiesPackage.SEMESTER__SEMESTER_CODE:
-				return SEMESTER_CODE__ESETTING_DELEGATE.dynamicIsSet(this, null, 0);
+			case StudiesPackage.SEMESTER__STUDY_YEAR_SEMESTER:
+				return STUDY_YEAR_SEMESTER__ESETTING_DELEGATE.dynamicIsSet(this, null, 0);
 		}
 		return super.eIsSet(featureID);
 	}

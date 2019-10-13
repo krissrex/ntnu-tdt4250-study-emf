@@ -462,13 +462,13 @@ public interface StudiesPackage extends EPackage {
 	int SEMESTER__COURSES = 0;
 
 	/**
-	 * The feature id for the '<em><b>Semester Code</b></em>' attribute.
+	 * The feature id for the '<em><b>Study Year Semester</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SEMESTER__SEMESTER_CODE = 1;
+	int SEMESTER__STUDY_YEAR_SEMESTER = 1;
 
 	/**
 	 * The number of structural features of the '<em>Semester</em>' class. <!--
@@ -840,15 +840,15 @@ public interface StudiesPackage extends EPackage {
 	EReference getSemester_Courses();
 
 	/**
-	 * Returns the meta object for the attribute '{@link no.ntnu.tdt4250.oving1.studies.Semester#getSemesterCode <em>Semester Code</em>}'.
+	 * Returns the meta object for the attribute '{@link no.ntnu.tdt4250.oving1.studies.Semester#getStudyYearSemester <em>Study Year Semester</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Semester Code</em>'.
-	 * @see no.ntnu.tdt4250.oving1.studies.Semester#getSemesterCode()
+	 * @return the meta object for the attribute '<em>Study Year Semester</em>'.
+	 * @see no.ntnu.tdt4250.oving1.studies.Semester#getStudyYearSemester()
 	 * @see #getSemester()
 	 * @generated
 	 */
-	EAttribute getSemester_SemesterCode();
+	EAttribute getSemester_StudyYearSemester();
 
 	/**
 	 * Returns the meta object for enum '{@link no.ntnu.tdt4250.oving1.studies.SemesterCode <em>Semester Code</em>}'.
@@ -1134,12 +1134,12 @@ public interface StudiesPackage extends EPackage {
 		EReference SEMESTER__COURSES = eINSTANCE.getSemester_Courses();
 
 		/**
-		 * The meta object literal for the '<em><b>Semester Code</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Study Year Semester</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SEMESTER__SEMESTER_CODE = eINSTANCE.getSemester_SemesterCode();
+		EAttribute SEMESTER__STUDY_YEAR_SEMESTER = eINSTANCE.getSemester_StudyYearSemester();
 
 		/**
 		 * The meta object literal for the '{@link no.ntnu.tdt4250.oving1.studies.SemesterCode <em>Semester Code</em>}' enum.

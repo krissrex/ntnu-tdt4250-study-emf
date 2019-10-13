@@ -52,13 +52,23 @@ public class CourseInstanceImpl extends MinimalEObjectImpl.Container implements 
 	protected int year = YEAR_EDEFAULT;
 
 	/**
+	 * The default value of the '{@link #getSemester() <em>Semester</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSemester()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final SemesterCode SEMESTER_EDEFAULT = SemesterCode.SPRING;
+
+	/**
 	 * The cached value of the '{@link #getSemester() <em>Semester</em>}' attribute.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #getSemester()
 	 * @generated
 	 * @ordered
 	 */
-	protected SemesterCode semester;
+	protected SemesterCode semester = SEMESTER_EDEFAULT;
 
 	/**
 	 * The cached setting delegate for the '{@link #getInstanceName() <em>Instance Name</em>}' attribute.
@@ -158,7 +168,7 @@ public class CourseInstanceImpl extends MinimalEObjectImpl.Container implements 
 	 */
 	public void setSemester(SemesterCode newSemester) {
 		SemesterCode oldSemester = semester;
-		semester = newSemester == null ? null : newSemester;
+		semester = newSemester == null ? SEMESTER_EDEFAULT : newSemester;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, StudiesPackage.COURSE_INSTANCE__SEMESTER, oldSemester, semester));
 	}
@@ -236,8 +246,11 @@ public class CourseInstanceImpl extends MinimalEObjectImpl.Container implements 
 		return super.eGet(featureID, resolve, coreType);
 	}
 
+
+
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -250,7 +263,7 @@ public class CourseInstanceImpl extends MinimalEObjectImpl.Container implements 
 				setYear((Integer)newValue);
 				return;
 			case StudiesPackage.COURSE_INSTANCE__SEMESTER:
-				setSemester(newValue);
+				setSemester((SemesterCode)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -270,7 +283,7 @@ public class CourseInstanceImpl extends MinimalEObjectImpl.Container implements 
 				setYear(YEAR_EDEFAULT);
 				return;
 			case StudiesPackage.COURSE_INSTANCE__SEMESTER:
-				setSemester((SemesterCode)null);
+				setSemester(SEMESTER_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -288,7 +301,7 @@ public class CourseInstanceImpl extends MinimalEObjectImpl.Container implements 
 			case StudiesPackage.COURSE_INSTANCE__YEAR:
 				return year != YEAR_EDEFAULT;
 			case StudiesPackage.COURSE_INSTANCE__SEMESTER:
-				return semester != null;
+				return semester != SEMESTER_EDEFAULT;
 			case StudiesPackage.COURSE_INSTANCE__INSTANCE_NAME:
 				return INSTANCE_NAME__ESETTING_DELEGATE.dynamicIsSet(this, null, 0);
 		}

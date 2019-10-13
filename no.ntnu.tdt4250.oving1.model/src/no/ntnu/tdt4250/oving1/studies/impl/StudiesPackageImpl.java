@@ -459,7 +459,7 @@ public class StudiesPackageImpl extends EPackageImpl implements StudiesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSemester_SemesterCode() {
+	public EAttribute getSemester_StudyYearSemester() {
 		return (EAttribute)semesterEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -544,7 +544,7 @@ public class StudiesPackageImpl extends EPackageImpl implements StudiesPackage {
 
 		semesterEClass = createEClass(SEMESTER);
 		createEReference(semesterEClass, SEMESTER__COURSES);
-		createEAttribute(semesterEClass, SEMESTER__SEMESTER_CODE);
+		createEAttribute(semesterEClass, SEMESTER__STUDY_YEAR_SEMESTER);
 
 		// Create enums
 		semesterCodeEEnum = createEEnum(SEMESTER_CODE);
@@ -621,7 +621,7 @@ public class StudiesPackageImpl extends EPackageImpl implements StudiesPackage {
 
 		initEClass(semesterEClass, Semester.class, "Semester", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getSemester_Courses(), this.getCourseInstance(), null, "courses", null, 1, -1, Semester.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getSemester_SemesterCode(), ecorePackage.getEString(), "semesterCode", null, 0, 1, Semester.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSemester_StudyYearSemester(), ecorePackage.getEString(), "studyYearSemester", null, 0, 1, Semester.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(semesterCodeEEnum, SemesterCode.class, "SemesterCode");
@@ -711,7 +711,7 @@ public class StudiesPackageImpl extends EPackageImpl implements StudiesPackage {
 			   "shouldHave30StudyPoints", "self.courses.course.studyPoints->sum() = 30.0"
 		   });
 		addAnnotation
-		  (getSemester_SemesterCode(),
+		  (getSemester_StudyYearSemester(),
 		   source,
 		   new String[] {
 			   "derivation", "if self.eContainmentFeature() <> null and self.eContainmentFeature().name = \'autumnSemester\' then \'Autumn\' else \'Spring\' endif"

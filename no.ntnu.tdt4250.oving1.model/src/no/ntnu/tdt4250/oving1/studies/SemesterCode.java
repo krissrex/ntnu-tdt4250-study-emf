@@ -13,7 +13,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * '<em><b>Semester Code</b></em>', and utility methods for working with them.
  * <!-- end-user-doc -->
  * @see no.ntnu.tdt4250.oving1.studies.StudiesPackage#getSemesterCode()
- * @model instanceClass="no.ntnu.tdt4250.oving1.studies.SemesterCode"
+ * @model
  * @generated
  */
 public enum SemesterCode implements Enumerator {
@@ -39,8 +39,8 @@ public enum SemesterCode implements Enumerator {
 
 	/**
 	 * The '<em><b>Spring</b></em>' literal value.
-	 * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #SPRING
 	 * @model name="Spring"
 	 * @generated
@@ -50,8 +50,8 @@ public enum SemesterCode implements Enumerator {
 
 	/**
 	 * The '<em><b>Autumn</b></em>' literal value.
-	 * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #AUTUMN
 	 * @model name="Autumn"
 	 * @generated

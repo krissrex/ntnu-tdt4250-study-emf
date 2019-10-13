@@ -100,7 +100,7 @@ public class StudiesValidator extends EObjectValidator {
 			case StudiesPackage.SEMESTER:
 				return validateSemester((Semester)value, diagnostics, context);
 			case StudiesPackage.SEMESTER_CODE:
-				return validateSemesterCode(value, diagnostics, context);
+				return validateSemesterCode((SemesterCode)value, diagnostics, context);
 			case StudiesPackage.COURSE_CODE:
 				return validateCourseCode((String)value, diagnostics, context);
 			default:

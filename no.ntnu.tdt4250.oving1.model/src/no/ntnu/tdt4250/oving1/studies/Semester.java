@@ -15,7 +15,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link no.ntnu.tdt4250.oving1.studies.Semester#getCourses <em>Courses</em>}</li>
- *   <li>{@link no.ntnu.tdt4250.oving1.studies.Semester#getSemesterCode <em>Semester Code</em>}</li>
+ *   <li>{@link no.ntnu.tdt4250.oving1.studies.Semester#getStudyYearSemester <em>Study Year Semester</em>}</li>
  * </ul>
  *
  * @see no.ntnu.tdt4250.oving1.studies.StudiesPackage#getSemester()
@@ -36,15 +36,15 @@ public interface Semester extends EObject {
 	EList<CourseInstance> getCourses();
 
 	/**
-	 * Returns the value of the '<em><b>Semester Code</b></em>' attribute.
+	 * Returns the value of the '<em><b>Study Year Semester</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Semester Code</em>' attribute.
-	 * @see no.ntnu.tdt4250.oving1.studies.StudiesPackage#getSemester_SemesterCode()
+	 * @return the value of the '<em>Study Year Semester</em>' attribute.
+	 * @see no.ntnu.tdt4250.oving1.studies.StudiesPackage#getSemester_StudyYearSemester()
 	 * @model transient="true" changeable="false" volatile="true" derived="true"
 	 *        annotation="http://www.eclipse.org/acceleo/query/1.0 derivation='if self.eContainmentFeature() &lt;&gt; null and self.eContainmentFeature().name = \'autumnSemester\' then \'Autumn\' else \'Spring\' endif'"
 	 * @generated
 	 */
-	String getSemesterCode();
+	String getStudyYearSemester();
 
 } // Semester
