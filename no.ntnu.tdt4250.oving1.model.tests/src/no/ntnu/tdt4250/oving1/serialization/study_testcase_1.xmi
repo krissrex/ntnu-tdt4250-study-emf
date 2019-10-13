@@ -3,8 +3,8 @@
     xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:studies="platform:/plugins/no.ntnu.tdt4250.oving1.model/model/studies.ecore"
-    xsi:schemaLocation="platform:/plugins/no.ntnu.tdt4250.oving1.model/model/studies.ecore studies.ecore"
+    xmlns:studies="platform:/plugin/no.ntnu.tdt4250.oving1.model/model/studies.ecore"
+    xsi:schemaLocation="platform:/plugin/no.ntnu.tdt4250.oving1.model/model/studies.ecore studies.ecore"
     name="NTNU">
   <courseInstances
       course="//@courses.0"

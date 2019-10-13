@@ -14,10 +14,34 @@
 
 <body>
 
-<h1>Courses</h1>
+<h1>Studies</h1>
 
+[for (study : Study | university.studies)]
+	[generateStudy(study)/]
+	<hline/><br/>
+[/for]
 
 </body>
 </html>
 	[/file]
+[/template]
+
+[template public generateStudy(study: Study)]
+	<h2>[study.name/] - [study.code/]</h2>
+	<div class="studyInstance">
+		[for (studyInstance : StudyInstance | study.studyInstances)]
+			[generateStudyInstance(studyInstance)/]
+		[/for]
+	</div>
+[/template]
+
+[template public generateStudyInstance(instance : StudyInstance)]
+	<h3>Kull [instance.year/]</h3>
+	
+[/template]
+
+[template public generateStudyInstanceYearTablerow(instanceYear : StudyYear, year: Integer)]
+	<tr>
+	<td></td>
+	</tr>
 [/template]
