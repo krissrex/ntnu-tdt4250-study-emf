@@ -384,7 +384,7 @@ public class StudiesToHtmlGenerator extends AbstractAcceleoGenerator {
      * 
      * @param resourceSet
      *            The resource set which registry has to be updated.
-     * @generated
+     * @generated NOT
      */
     @Override
     public void registerResourceFactories(ResourceSet resourceSet) {
@@ -412,6 +412,8 @@ public class StudiesToHtmlGenerator extends AbstractAcceleoGenerator {
          * targetting UML models in standalone, you NEED to use the following:
          */ 
         // UMLResourcesUtil.init(resourceSet)
+        
+        StudiesPackage pkg = StudiesPackage.eINSTANCE; // Has to be referenced, otherwise you get a proxy error from acceleo :S
     }
     
 }

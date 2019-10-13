@@ -33,6 +33,7 @@ class StudiesToHtmlGeneratorTest {
 		mtdt.setName("Datateknologi");
 		uni.getStudies().add(mtdt);
 	}
+	
 
 	@Test
 	void shouldGenerateHtmlFromModel() throws Exception {
@@ -40,7 +41,6 @@ class StudiesToHtmlGeneratorTest {
 		File targetFolder = new File("generated/test");
 		targetFolder.mkdirs();
 		System.out.println("Generating in folder: " + targetFolder.getAbsolutePath().toString());
-		
 		// When
 		StudiesToHtmlGenerator generator = new StudiesToHtmlGenerator(uni, targetFolder, Collections.emptyList());
 		generator.generate(new BasicMonitor());

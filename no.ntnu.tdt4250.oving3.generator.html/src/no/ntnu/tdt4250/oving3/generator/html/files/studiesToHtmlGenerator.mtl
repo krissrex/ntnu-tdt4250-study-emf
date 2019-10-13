@@ -1,5 +1,5 @@
 [comment encoding = UTF-8 /]
-[module studiesToHtmlGenerator('http://www.eclipse.org/emf/2002/Ecore', 'platform:/plugin/no.ntnu.tdt4250.oving1.model/model/studies.ecore')]
+[module studiesToHtmlGenerator('platform:/plugin/no.ntnu.tdt4250.oving1.model/model/studies.ecore', 'http://www.eclipse.org/emf/2002/Ecore')]
 
 
 [template public generateHtml(university : University)]
