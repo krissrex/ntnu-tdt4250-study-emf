@@ -20,49 +20,44 @@ import org.eclipse.emf.ecore.EReference;
  * <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * 
  * @see no.ntnu.tdt4250.oving1.studies.StudiesFactory
- * @model kind="package" annotation="http://www.eclipse.org/emf/2002/Ecore
- *        validationDelegates='http://www.eclipse.org/acceleo/query/1.0'
- *        settingDelegates='http://www.eclipse.org/acceleo/query/1.0'
- *        invocationDelegates='http://www.eclipse.org/acceleo/query/1.0'"
+ * @model kind="package"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore validationDelegates='http://www.eclipse.org/acceleo/query/1.0' settingDelegates='http://www.eclipse.org/acceleo/query/1.0' invocationDelegates='http://www.eclipse.org/acceleo/query/1.0'"
  * @generated
  */
 public interface StudiesPackage extends EPackage {
 	/**
-	 * The package name. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The package name.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	String eNAME = "studies";
 
 	/**
-	 * The package namespace URI. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The package namespace URI.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	String eNS_URI = "platform:/plugin/no.ntnu.tdt4250.oving1.model/model/studies.ecore";
 
 	/**
-	 * The package namespace name. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The package namespace name.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	String eNS_PREFIX = "studies";
 
 	/**
-	 * The singleton instance of the package. <!-- begin-user-doc --> <!--
+	 * The singleton instance of the package.
+	 * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	StudiesPackage eINSTANCE = no.ntnu.tdt4250.oving1.studies.impl.StudiesPackageImpl.init();
 
 	/**
-	 * The meta object id for the
-	 * '{@link no.ntnu.tdt4250.oving1.studies.impl.UniversityImpl
-	 * <em>University</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The meta object id for the '{@link no.ntnu.tdt4250.oving1.studies.impl.UniversityImpl <em>University</em>}' class.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see no.ntnu.tdt4250.oving1.studies.impl.UniversityImpl
 	 * @see no.ntnu.tdt4250.oving1.studies.impl.StudiesPackageImpl#getUniversity()
 	 * @generated
@@ -70,40 +65,29 @@ public interface StudiesPackage extends EPackage {
 	int UNIVERSITY = 0;
 
 	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute. <!-- begin-user-doc
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 * @ordered
 	 */
 	int UNIVERSITY__NAME = 0;
 
 	/**
-	 * The feature id for the '<em><b>Course Instances</b></em>' containment
-	 * reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int UNIVERSITY__COURSE_INSTANCES = 1;
-
-	/**
 	 * The feature id for the '<em><b>Courses</b></em>' containment reference list.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 * @ordered
 	 */
-	int UNIVERSITY__COURSES = 2;
+	int UNIVERSITY__COURSES = 1;
 
 	/**
 	 * The feature id for the '<em><b>Studies</b></em>' containment reference list.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 * @ordered
 	 */
-	int UNIVERSITY__STUDIES = 3;
+	int UNIVERSITY__STUDIES = 2;
 
 	/**
 	 * The number of structural features of the '<em>University</em>' class. <!--
@@ -112,7 +96,7 @@ public interface StudiesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNIVERSITY_FEATURE_COUNT = 4;
+	int UNIVERSITY_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>University</em>' class. <!--
@@ -124,10 +108,8 @@ public interface StudiesPackage extends EPackage {
 	int UNIVERSITY_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the
-	 * '{@link no.ntnu.tdt4250.oving1.studies.impl.CourseImpl <em>Course</em>}'
-	 * class. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The meta object id for the '{@link no.ntnu.tdt4250.oving1.studies.impl.CourseImpl <em>Course</em>}' class.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see no.ntnu.tdt4250.oving1.studies.impl.CourseImpl
 	 * @see no.ntnu.tdt4250.oving1.studies.impl.StudiesPackageImpl#getCourse()
 	 * @generated
@@ -135,18 +117,18 @@ public interface StudiesPackage extends EPackage {
 	int COURSE = 1;
 
 	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute. <!-- begin-user-doc
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 * @ordered
 	 */
 	int COURSE__NAME = 0;
 
 	/**
-	 * The feature id for the '<em><b>Code</b></em>' attribute. <!-- begin-user-doc
+	 * The feature id for the '<em><b>Code</b></em>' attribute.
+	 * <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 * @ordered
 	 */
@@ -162,28 +144,35 @@ public interface StudiesPackage extends EPackage {
 	int COURSE__STUDY_POINTS = 2;
 
 	/**
+	 * The feature id for the '<em><b>Course Instances</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COURSE__COURSE_INSTANCES = 3;
+
+	/**
 	 * The number of structural features of the '<em>Course</em>' class. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated
 	 * @ordered
 	 */
-	int COURSE_FEATURE_COUNT = 3;
+	int COURSE_FEATURE_COUNT = 4;
 
 	/**
-	 * The number of operations of the '<em>Course</em>' class. <!-- begin-user-doc
+	 * The number of operations of the '<em>Course</em>' class.
+	 * <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 * @ordered
 	 */
 	int COURSE_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the
-	 * '{@link no.ntnu.tdt4250.oving1.studies.impl.CourseInstanceImpl <em>Course
-	 * Instance</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The meta object id for the '{@link no.ntnu.tdt4250.oving1.studies.impl.CourseInstanceImpl <em>Course Instance</em>}' class.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see no.ntnu.tdt4250.oving1.studies.impl.CourseInstanceImpl
 	 * @see no.ntnu.tdt4250.oving1.studies.impl.StudiesPackageImpl#getCourseInstance()
 	 * @generated
@@ -200,9 +189,9 @@ public interface StudiesPackage extends EPackage {
 	int COURSE_INSTANCE__COURSE = 0;
 
 	/**
-	 * The feature id for the '<em><b>Year</b></em>' attribute. <!-- begin-user-doc
+	 * The feature id for the '<em><b>Year</b></em>' attribute.
+	 * <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 * @ordered
 	 */
@@ -229,7 +218,6 @@ public interface StudiesPackage extends EPackage {
 	/**
 	 * The number of structural features of the '<em>Course Instance</em>' class.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 * @ordered
 	 */
@@ -245,10 +233,8 @@ public interface StudiesPackage extends EPackage {
 	int COURSE_INSTANCE_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the
-	 * '{@link no.ntnu.tdt4250.oving1.studies.impl.StudyImpl <em>Study</em>}' class.
+	 * The meta object id for the '{@link no.ntnu.tdt4250.oving1.studies.impl.StudyImpl <em>Study</em>}' class.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @see no.ntnu.tdt4250.oving1.studies.impl.StudyImpl
 	 * @see no.ntnu.tdt4250.oving1.studies.impl.StudiesPackageImpl#getStudy()
 	 * @generated
@@ -256,27 +242,26 @@ public interface StudiesPackage extends EPackage {
 	int STUDY = 3;
 
 	/**
-	 * The feature id for the '<em><b>Study Instances</b></em>' containment
-	 * reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The feature id for the '<em><b>Study Instances</b></em>' containment reference list.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
 	int STUDY__STUDY_INSTANCES = 0;
 
 	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute. <!-- begin-user-doc
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 * @ordered
 	 */
 	int STUDY__NAME = 1;
 
 	/**
-	 * The feature id for the '<em><b>Code</b></em>' attribute. <!-- begin-user-doc
+	 * The feature id for the '<em><b>Code</b></em>' attribute.
+	 * <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 * @ordered
 	 */
@@ -292,19 +277,17 @@ public interface StudiesPackage extends EPackage {
 	int STUDY_FEATURE_COUNT = 3;
 
 	/**
-	 * The number of operations of the '<em>Study</em>' class. <!-- begin-user-doc
+	 * The number of operations of the '<em>Study</em>' class.
+	 * <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 * @ordered
 	 */
 	int STUDY_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the
-	 * '{@link no.ntnu.tdt4250.oving1.studies.impl.StudyInstanceImpl <em>Study
-	 * Instance</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The meta object id for the '{@link no.ntnu.tdt4250.oving1.studies.impl.StudyInstanceImpl <em>Study Instance</em>}' class.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see no.ntnu.tdt4250.oving1.studies.impl.StudyInstanceImpl
 	 * @see no.ntnu.tdt4250.oving1.studies.impl.StudiesPackageImpl#getStudyInstance()
 	 * @generated
@@ -323,16 +306,15 @@ public interface StudiesPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Start Year</b></em>' containment reference.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 * @ordered
 	 */
 	int STUDY_INSTANCE__START_YEAR = 1;
 
 	/**
-	 * The feature id for the '<em><b>Year</b></em>' attribute. <!-- begin-user-doc
+	 * The feature id for the '<em><b>Year</b></em>' attribute.
+	 * <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 * @ordered
 	 */
@@ -341,7 +323,6 @@ public interface StudiesPackage extends EPackage {
 	/**
 	 * The number of structural features of the '<em>Study Instance</em>' class.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 * @ordered
 	 */
@@ -357,10 +338,8 @@ public interface StudiesPackage extends EPackage {
 	int STUDY_INSTANCE_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the
-	 * '{@link no.ntnu.tdt4250.oving1.studies.impl.StudyYearImpl <em>Study
-	 * Year</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The meta object id for the '{@link no.ntnu.tdt4250.oving1.studies.impl.StudyYearImpl <em>Study Year</em>}' class.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see no.ntnu.tdt4250.oving1.studies.impl.StudyYearImpl
 	 * @see no.ntnu.tdt4250.oving1.studies.impl.StudiesPackageImpl#getStudyYear()
 	 * @generated
@@ -368,9 +347,8 @@ public interface StudiesPackage extends EPackage {
 	int STUDY_YEAR = 5;
 
 	/**
-	 * The feature id for the '<em><b>Next Year</b></em>' containment reference
-	 * list. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The feature id for the '<em><b>Next Year</b></em>' containment reference list.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
@@ -386,22 +364,21 @@ public interface StudiesPackage extends EPackage {
 	int STUDY_YEAR__PROGRAM_NAME = 1;
 
 	/**
-	 * The feature id for the '<em><b>Spring Semester</b></em>' containment
-	 * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The feature id for the '<em><b>Spring Semester</b></em>' containment reference.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
 	int STUDY_YEAR__SPRING_SEMESTER = 2;
 
 	/**
-	 * The feature id for the '<em><b>Fall Semester</b></em>' containment reference.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The feature id for the '<em><b>Autumn Semester</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STUDY_YEAR__FALL_SEMESTER = 3;
+	int STUDY_YEAR__AUTUMN_SEMESTER = 3;
 
 	/**
 	 * The number of structural features of the '<em>Study Year</em>' class. <!--
@@ -422,10 +399,8 @@ public interface StudiesPackage extends EPackage {
 	int STUDY_YEAR_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the
-	 * '{@link no.ntnu.tdt4250.oving1.studies.impl.StudyCourseImpl <em>Study
-	 * Course</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The meta object id for the '{@link no.ntnu.tdt4250.oving1.studies.impl.StudyCourseImpl <em>Study Course</em>}' class.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see no.ntnu.tdt4250.oving1.studies.impl.StudyCourseImpl
 	 * @see no.ntnu.tdt4250.oving1.studies.impl.StudiesPackageImpl#getStudyCourse()
 	 * @generated
@@ -469,10 +444,8 @@ public interface StudiesPackage extends EPackage {
 	int STUDY_COURSE_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the
-	 * '{@link no.ntnu.tdt4250.oving1.studies.impl.SemesterImpl <em>Semester</em>}'
-	 * class. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The meta object id for the '{@link no.ntnu.tdt4250.oving1.studies.impl.SemesterImpl <em>Semester</em>}' class.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see no.ntnu.tdt4250.oving1.studies.impl.SemesterImpl
 	 * @see no.ntnu.tdt4250.oving1.studies.impl.StudiesPackageImpl#getSemester()
 	 * @generated
@@ -489,13 +462,22 @@ public interface StudiesPackage extends EPackage {
 	int SEMESTER__COURSES = 0;
 
 	/**
+	 * The feature id for the '<em><b>Semester Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEMESTER__SEMESTER_CODE = 1;
+
+	/**
 	 * The number of structural features of the '<em>Semester</em>' class. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated
 	 * @ordered
 	 */
-	int SEMESTER_FEATURE_COUNT = 1;
+	int SEMESTER_FEATURE_COUNT = 2;
 
 	/**
 	 * The number of operations of the '<em>Semester</em>' class. <!--
@@ -507,10 +489,8 @@ public interface StudiesPackage extends EPackage {
 	int SEMESTER_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the
-	 * '{@link no.ntnu.tdt4250.oving1.studies.SemesterCode <em>Semester Code</em>}'
-	 * enum. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The meta object id for the '{@link no.ntnu.tdt4250.oving1.studies.SemesterCode <em>Semester Code</em>}' enum.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see no.ntnu.tdt4250.oving1.studies.SemesterCode
 	 * @see no.ntnu.tdt4250.oving1.studies.impl.StudiesPackageImpl#getSemesterCode()
 	 * @generated
@@ -539,10 +519,8 @@ public interface StudiesPackage extends EPackage {
 	EClass getUniversity();
 
 	/**
-	 * Returns the meta object for the attribute
-	 * '{@link no.ntnu.tdt4250.oving1.studies.University#getName <em>Name</em>}'.
+	 * Returns the meta object for the attribute '{@link no.ntnu.tdt4250.oving1.studies.University#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @return the meta object for the attribute '<em>Name</em>'.
 	 * @see no.ntnu.tdt4250.oving1.studies.University#getName()
 	 * @see #getUniversity()
@@ -551,25 +529,9 @@ public interface StudiesPackage extends EPackage {
 	EAttribute getUniversity_Name();
 
 	/**
-	 * Returns the meta object for the containment reference list
-	 * '{@link no.ntnu.tdt4250.oving1.studies.University#getCourseInstances
-	 * <em>Course Instances</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @return the meta object for the containment reference list '<em>Course
-	 *         Instances</em>'.
-	 * @see no.ntnu.tdt4250.oving1.studies.University#getCourseInstances()
-	 * @see #getUniversity()
-	 * @generated
-	 */
-	EReference getUniversity_CourseInstances();
-
-	/**
-	 * Returns the meta object for the containment reference list
-	 * '{@link no.ntnu.tdt4250.oving1.studies.University#getCourses
-	 * <em>Courses</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @return the meta object for the containment reference list
-	 *         '<em>Courses</em>'.
+	 * Returns the meta object for the containment reference list '{@link no.ntnu.tdt4250.oving1.studies.University#getCourses <em>Courses</em>}'.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Courses</em>'.
 	 * @see no.ntnu.tdt4250.oving1.studies.University#getCourses()
 	 * @see #getUniversity()
 	 * @generated
@@ -577,12 +539,9 @@ public interface StudiesPackage extends EPackage {
 	EReference getUniversity_Courses();
 
 	/**
-	 * Returns the meta object for the containment reference list
-	 * '{@link no.ntnu.tdt4250.oving1.studies.University#getStudies
-	 * <em>Studies</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @return the meta object for the containment reference list
-	 *         '<em>Studies</em>'.
+	 * Returns the meta object for the containment reference list '{@link no.ntnu.tdt4250.oving1.studies.University#getStudies <em>Studies</em>}'.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Studies</em>'.
 	 * @see no.ntnu.tdt4250.oving1.studies.University#getStudies()
 	 * @see #getUniversity()
 	 * @generated
@@ -625,10 +584,8 @@ public interface StudiesPackage extends EPackage {
 	EAttribute getCourse_Code();
 
 	/**
-	 * Returns the meta object for the attribute
-	 * '{@link no.ntnu.tdt4250.oving1.studies.Course#getStudyPoints <em>Study
-	 * Points</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * Returns the meta object for the attribute '{@link no.ntnu.tdt4250.oving1.studies.Course#getStudyPoints <em>Study Points</em>}'.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Study Points</em>'.
 	 * @see no.ntnu.tdt4250.oving1.studies.Course#getStudyPoints()
 	 * @see #getCourse()
@@ -637,10 +594,19 @@ public interface StudiesPackage extends EPackage {
 	EAttribute getCourse_StudyPoints();
 
 	/**
-	 * Returns the meta object for class
-	 * '{@link no.ntnu.tdt4250.oving1.studies.CourseInstance <em>Course
-	 * Instance</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * Returns the meta object for the containment reference list '{@link no.ntnu.tdt4250.oving1.studies.Course#getCourseInstances <em>Course Instances</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Course Instances</em>'.
+	 * @see no.ntnu.tdt4250.oving1.studies.Course#getCourseInstances()
+	 * @see #getCourse()
+	 * @generated
+	 */
+	EReference getCourse_CourseInstances();
+
+	/**
+	 * Returns the meta object for class '{@link no.ntnu.tdt4250.oving1.studies.CourseInstance <em>Course Instance</em>}'.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Course Instance</em>'.
 	 * @see no.ntnu.tdt4250.oving1.studies.CourseInstance
 	 * @generated
@@ -648,11 +614,9 @@ public interface StudiesPackage extends EPackage {
 	EClass getCourseInstance();
 
 	/**
-	 * Returns the meta object for the reference
-	 * '{@link no.ntnu.tdt4250.oving1.studies.CourseInstance#getCourse
-	 * <em>Course</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @return the meta object for the reference '<em>Course</em>'.
+	 * Returns the meta object for the container reference '{@link no.ntnu.tdt4250.oving1.studies.CourseInstance#getCourse <em>Course</em>}'.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @return the meta object for the container reference '<em>Course</em>'.
 	 * @see no.ntnu.tdt4250.oving1.studies.CourseInstance#getCourse()
 	 * @see #getCourseInstance()
 	 * @generated
@@ -660,10 +624,8 @@ public interface StudiesPackage extends EPackage {
 	EReference getCourseInstance_Course();
 
 	/**
-	 * Returns the meta object for the attribute
-	 * '{@link no.ntnu.tdt4250.oving1.studies.CourseInstance#getYear
-	 * <em>Year</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * Returns the meta object for the attribute '{@link no.ntnu.tdt4250.oving1.studies.CourseInstance#getYear <em>Year</em>}'.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Year</em>'.
 	 * @see no.ntnu.tdt4250.oving1.studies.CourseInstance#getYear()
 	 * @see #getCourseInstance()
@@ -672,10 +634,8 @@ public interface StudiesPackage extends EPackage {
 	EAttribute getCourseInstance_Year();
 
 	/**
-	 * Returns the meta object for the attribute
-	 * '{@link no.ntnu.tdt4250.oving1.studies.CourseInstance#getSemester
-	 * <em>Semester</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * Returns the meta object for the attribute '{@link no.ntnu.tdt4250.oving1.studies.CourseInstance#getSemester <em>Semester</em>}'.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Semester</em>'.
 	 * @see no.ntnu.tdt4250.oving1.studies.CourseInstance#getSemester()
 	 * @see #getCourseInstance()
@@ -684,10 +644,8 @@ public interface StudiesPackage extends EPackage {
 	EAttribute getCourseInstance_Semester();
 
 	/**
-	 * Returns the meta object for the attribute
-	 * '{@link no.ntnu.tdt4250.oving1.studies.CourseInstance#getInstanceName
-	 * <em>Instance Name</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * Returns the meta object for the attribute '{@link no.ntnu.tdt4250.oving1.studies.CourseInstance#getInstanceName <em>Instance Name</em>}'.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Instance Name</em>'.
 	 * @see no.ntnu.tdt4250.oving1.studies.CourseInstance#getInstanceName()
 	 * @see #getCourseInstance()
@@ -707,12 +665,9 @@ public interface StudiesPackage extends EPackage {
 	EClass getStudy();
 
 	/**
-	 * Returns the meta object for the containment reference list
-	 * '{@link no.ntnu.tdt4250.oving1.studies.Study#getStudyInstances <em>Study
-	 * Instances</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @return the meta object for the containment reference list '<em>Study
-	 *         Instances</em>'.
+	 * Returns the meta object for the containment reference list '{@link no.ntnu.tdt4250.oving1.studies.Study#getStudyInstances <em>Study Instances</em>}'.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Study Instances</em>'.
 	 * @see no.ntnu.tdt4250.oving1.studies.Study#getStudyInstances()
 	 * @see #getStudy()
 	 * @generated
@@ -744,10 +699,8 @@ public interface StudiesPackage extends EPackage {
 	EAttribute getStudy_Code();
 
 	/**
-	 * Returns the meta object for class
-	 * '{@link no.ntnu.tdt4250.oving1.studies.StudyInstance <em>Study
-	 * Instance</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * Returns the meta object for class '{@link no.ntnu.tdt4250.oving1.studies.StudyInstance <em>Study Instance</em>}'.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Study Instance</em>'.
 	 * @see no.ntnu.tdt4250.oving1.studies.StudyInstance
 	 * @generated
@@ -755,10 +708,8 @@ public interface StudiesPackage extends EPackage {
 	EClass getStudyInstance();
 
 	/**
-	 * Returns the meta object for the container reference
-	 * '{@link no.ntnu.tdt4250.oving1.studies.StudyInstance#getStudy
-	 * <em>Study</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * Returns the meta object for the container reference '{@link no.ntnu.tdt4250.oving1.studies.StudyInstance#getStudy <em>Study</em>}'.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @return the meta object for the container reference '<em>Study</em>'.
 	 * @see no.ntnu.tdt4250.oving1.studies.StudyInstance#getStudy()
 	 * @see #getStudyInstance()
@@ -767,10 +718,8 @@ public interface StudiesPackage extends EPackage {
 	EReference getStudyInstance_Study();
 
 	/**
-	 * Returns the meta object for the containment reference
-	 * '{@link no.ntnu.tdt4250.oving1.studies.StudyInstance#getStartYear <em>Start
-	 * Year</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * Returns the meta object for the containment reference '{@link no.ntnu.tdt4250.oving1.studies.StudyInstance#getStartYear <em>Start Year</em>}'.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Start Year</em>'.
 	 * @see no.ntnu.tdt4250.oving1.studies.StudyInstance#getStartYear()
 	 * @see #getStudyInstance()
@@ -779,10 +728,8 @@ public interface StudiesPackage extends EPackage {
 	EReference getStudyInstance_StartYear();
 
 	/**
-	 * Returns the meta object for the attribute
-	 * '{@link no.ntnu.tdt4250.oving1.studies.StudyInstance#getYear <em>Year</em>}'.
+	 * Returns the meta object for the attribute '{@link no.ntnu.tdt4250.oving1.studies.StudyInstance#getYear <em>Year</em>}'.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @return the meta object for the attribute '<em>Year</em>'.
 	 * @see no.ntnu.tdt4250.oving1.studies.StudyInstance#getYear()
 	 * @see #getStudyInstance()
@@ -802,12 +749,9 @@ public interface StudiesPackage extends EPackage {
 	EClass getStudyYear();
 
 	/**
-	 * Returns the meta object for the containment reference list
-	 * '{@link no.ntnu.tdt4250.oving1.studies.StudyYear#getNextYear <em>Next
-	 * Year</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @return the meta object for the containment reference list '<em>Next
-	 *         Year</em>'.
+	 * Returns the meta object for the containment reference list '{@link no.ntnu.tdt4250.oving1.studies.StudyYear#getNextYear <em>Next Year</em>}'.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Next Year</em>'.
 	 * @see no.ntnu.tdt4250.oving1.studies.StudyYear#getNextYear()
 	 * @see #getStudyYear()
 	 * @generated
@@ -815,10 +759,8 @@ public interface StudiesPackage extends EPackage {
 	EReference getStudyYear_NextYear();
 
 	/**
-	 * Returns the meta object for the attribute
-	 * '{@link no.ntnu.tdt4250.oving1.studies.StudyYear#getProgramName <em>Program
-	 * Name</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * Returns the meta object for the attribute '{@link no.ntnu.tdt4250.oving1.studies.StudyYear#getProgramName <em>Program Name</em>}'.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Program Name</em>'.
 	 * @see no.ntnu.tdt4250.oving1.studies.StudyYear#getProgramName()
 	 * @see #getStudyYear()
@@ -827,12 +769,9 @@ public interface StudiesPackage extends EPackage {
 	EAttribute getStudyYear_ProgramName();
 
 	/**
-	 * Returns the meta object for the containment reference
-	 * '{@link no.ntnu.tdt4250.oving1.studies.StudyYear#getSpringSemester <em>Spring
-	 * Semester</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @return the meta object for the containment reference '<em>Spring
-	 *         Semester</em>'.
+	 * Returns the meta object for the containment reference '{@link no.ntnu.tdt4250.oving1.studies.StudyYear#getSpringSemester <em>Spring Semester</em>}'.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Spring Semester</em>'.
 	 * @see no.ntnu.tdt4250.oving1.studies.StudyYear#getSpringSemester()
 	 * @see #getStudyYear()
 	 * @generated
@@ -840,23 +779,19 @@ public interface StudiesPackage extends EPackage {
 	EReference getStudyYear_SpringSemester();
 
 	/**
-	 * Returns the meta object for the containment reference
-	 * '{@link no.ntnu.tdt4250.oving1.studies.StudyYear#getFallSemester <em>Fall
-	 * Semester</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @return the meta object for the containment reference '<em>Fall
-	 *         Semester</em>'.
-	 * @see no.ntnu.tdt4250.oving1.studies.StudyYear#getFallSemester()
+	 * Returns the meta object for the containment reference '{@link no.ntnu.tdt4250.oving1.studies.StudyYear#getAutumnSemester <em>Autumn Semester</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Autumn Semester</em>'.
+	 * @see no.ntnu.tdt4250.oving1.studies.StudyYear#getAutumnSemester()
 	 * @see #getStudyYear()
 	 * @generated
 	 */
-	EReference getStudyYear_FallSemester();
+	EReference getStudyYear_AutumnSemester();
 
 	/**
-	 * Returns the meta object for class
-	 * '{@link no.ntnu.tdt4250.oving1.studies.StudyCourse <em>Study Course</em>}'.
+	 * Returns the meta object for class '{@link no.ntnu.tdt4250.oving1.studies.StudyCourse <em>Study Course</em>}'.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @return the meta object for class '<em>Study Course</em>'.
 	 * @see no.ntnu.tdt4250.oving1.studies.StudyCourse
 	 * @generated
@@ -864,10 +799,8 @@ public interface StudiesPackage extends EPackage {
 	EClass getStudyCourse();
 
 	/**
-	 * Returns the meta object for the reference
-	 * '{@link no.ntnu.tdt4250.oving1.studies.StudyCourse#getCourseInstance
-	 * <em>Course Instance</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * Returns the meta object for the reference '{@link no.ntnu.tdt4250.oving1.studies.StudyCourse#getCourseInstance <em>Course Instance</em>}'.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Course Instance</em>'.
 	 * @see no.ntnu.tdt4250.oving1.studies.StudyCourse#getCourseInstance()
 	 * @see #getStudyCourse()
@@ -876,10 +809,8 @@ public interface StudiesPackage extends EPackage {
 	EReference getStudyCourse_CourseInstance();
 
 	/**
-	 * Returns the meta object for the attribute
-	 * '{@link no.ntnu.tdt4250.oving1.studies.StudyCourse#isMandatory
-	 * <em>Mandatory</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * Returns the meta object for the attribute '{@link no.ntnu.tdt4250.oving1.studies.StudyCourse#isMandatory <em>Mandatory</em>}'.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Mandatory</em>'.
 	 * @see no.ntnu.tdt4250.oving1.studies.StudyCourse#isMandatory()
 	 * @see #getStudyCourse()
@@ -899,10 +830,8 @@ public interface StudiesPackage extends EPackage {
 	EClass getSemester();
 
 	/**
-	 * Returns the meta object for the reference list
-	 * '{@link no.ntnu.tdt4250.oving1.studies.Semester#getCourses
-	 * <em>Courses</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * Returns the meta object for the reference list '{@link no.ntnu.tdt4250.oving1.studies.Semester#getCourses <em>Courses</em>}'.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @return the meta object for the reference list '<em>Courses</em>'.
 	 * @see no.ntnu.tdt4250.oving1.studies.Semester#getCourses()
 	 * @see #getSemester()
@@ -911,10 +840,19 @@ public interface StudiesPackage extends EPackage {
 	EReference getSemester_Courses();
 
 	/**
-	 * Returns the meta object for enum
-	 * '{@link no.ntnu.tdt4250.oving1.studies.SemesterCode <em>Semester Code</em>}'.
+	 * Returns the meta object for the attribute '{@link no.ntnu.tdt4250.oving1.studies.Semester#getSemesterCode <em>Semester Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Semester Code</em>'.
+	 * @see no.ntnu.tdt4250.oving1.studies.Semester#getSemesterCode()
+	 * @see #getSemester()
+	 * @generated
+	 */
+	EAttribute getSemester_SemesterCode();
+
+	/**
+	 * Returns the meta object for enum '{@link no.ntnu.tdt4250.oving1.studies.SemesterCode <em>Semester Code</em>}'.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @return the meta object for enum '<em>Semester Code</em>'.
 	 * @see no.ntnu.tdt4250.oving1.studies.SemesterCode
 	 * @generated
@@ -922,9 +860,8 @@ public interface StudiesPackage extends EPackage {
 	EEnum getSemesterCode();
 
 	/**
-	 * Returns the meta object for data type '{@link java.lang.String <em>Course
-	 * Code</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * Returns the meta object for data type '{@link java.lang.String <em>Course Code</em>}'.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @return the meta object for data type '<em>Course Code</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
@@ -951,15 +888,12 @@ public interface StudiesPackage extends EPackage {
 	 * <li>and each data type</li>
 	 * </ul>
 	 * <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the
-		 * '{@link no.ntnu.tdt4250.oving1.studies.impl.UniversityImpl
-		 * <em>University</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 * The meta object literal for the '{@link no.ntnu.tdt4250.oving1.studies.impl.UniversityImpl <em>University</em>}' class.
+		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @see no.ntnu.tdt4250.oving1.studies.impl.UniversityImpl
 		 * @see no.ntnu.tdt4250.oving1.studies.impl.StudiesPackageImpl#getUniversity()
 		 * @generated
@@ -969,41 +903,27 @@ public interface StudiesPackage extends EPackage {
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
 		 * @generated
 		 */
 		EAttribute UNIVERSITY__NAME = eINSTANCE.getUniversity_Name();
 
 		/**
-		 * The meta object literal for the '<em><b>Course Instances</b></em>'
-		 * containment reference list feature. <!-- begin-user-doc --> <!-- end-user-doc
-		 * -->
-		 * 
-		 * @generated
-		 */
-		EReference UNIVERSITY__COURSE_INSTANCES = eINSTANCE.getUniversity_CourseInstances();
-
-		/**
-		 * The meta object literal for the '<em><b>Courses</b></em>' containment
-		 * reference list feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 * The meta object literal for the '<em><b>Courses</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference UNIVERSITY__COURSES = eINSTANCE.getUniversity_Courses();
 
 		/**
-		 * The meta object literal for the '<em><b>Studies</b></em>' containment
-		 * reference list feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 * The meta object literal for the '<em><b>Studies</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference UNIVERSITY__STUDIES = eINSTANCE.getUniversity_Studies();
 
 		/**
-		 * The meta object literal for the
-		 * '{@link no.ntnu.tdt4250.oving1.studies.impl.CourseImpl <em>Course</em>}'
-		 * class. <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 * The meta object literal for the '{@link no.ntnu.tdt4250.oving1.studies.impl.CourseImpl <em>Course</em>}' class.
+		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @see no.ntnu.tdt4250.oving1.studies.impl.CourseImpl
 		 * @see no.ntnu.tdt4250.oving1.studies.impl.StudiesPackageImpl#getCourse()
 		 * @generated
@@ -1013,7 +933,6 @@ public interface StudiesPackage extends EPackage {
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
 		 * @generated
 		 */
 		EAttribute COURSE__NAME = eINSTANCE.getCourse_Name();
@@ -1021,24 +940,28 @@ public interface StudiesPackage extends EPackage {
 		/**
 		 * The meta object literal for the '<em><b>Code</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
 		 * @generated
 		 */
 		EAttribute COURSE__CODE = eINSTANCE.getCourse_Code();
 
 		/**
-		 * The meta object literal for the '<em><b>Study Points</b></em>' attribute
-		 * feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 * The meta object literal for the '<em><b>Study Points</b></em>' attribute feature.
+		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
 		EAttribute COURSE__STUDY_POINTS = eINSTANCE.getCourse_StudyPoints();
 
 		/**
-		 * The meta object literal for the
-		 * '{@link no.ntnu.tdt4250.oving1.studies.impl.CourseInstanceImpl <em>Course
-		 * Instance</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 * The meta object literal for the '<em><b>Course Instances</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference COURSE__COURSE_INSTANCES = eINSTANCE.getCourse_CourseInstances();
+
+		/**
+		 * The meta object literal for the '{@link no.ntnu.tdt4250.oving1.studies.impl.CourseInstanceImpl <em>Course Instance</em>}' class.
+		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @see no.ntnu.tdt4250.oving1.studies.impl.CourseInstanceImpl
 		 * @see no.ntnu.tdt4250.oving1.studies.impl.StudiesPackageImpl#getCourseInstance()
 		 * @generated
@@ -1046,9 +969,8 @@ public interface StudiesPackage extends EPackage {
 		EClass COURSE_INSTANCE = eINSTANCE.getCourseInstance();
 
 		/**
-		 * The meta object literal for the '<em><b>Course</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Course</b></em>' container reference feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
 		 * @generated
 		 */
 		EReference COURSE_INSTANCE__COURSE = eINSTANCE.getCourseInstance_Course();
@@ -1056,7 +978,6 @@ public interface StudiesPackage extends EPackage {
 		/**
 		 * The meta object literal for the '<em><b>Year</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
 		 * @generated
 		 */
 		EAttribute COURSE_INSTANCE__YEAR = eINSTANCE.getCourseInstance_Year();
@@ -1064,24 +985,20 @@ public interface StudiesPackage extends EPackage {
 		/**
 		 * The meta object literal for the '<em><b>Semester</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
 		 * @generated
 		 */
 		EAttribute COURSE_INSTANCE__SEMESTER = eINSTANCE.getCourseInstance_Semester();
 
 		/**
-		 * The meta object literal for the '<em><b>Instance Name</b></em>' attribute
-		 * feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 * The meta object literal for the '<em><b>Instance Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
 		EAttribute COURSE_INSTANCE__INSTANCE_NAME = eINSTANCE.getCourseInstance_InstanceName();
 
 		/**
-		 * The meta object literal for the
-		 * '{@link no.ntnu.tdt4250.oving1.studies.impl.StudyImpl <em>Study</em>}' class.
+		 * The meta object literal for the '{@link no.ntnu.tdt4250.oving1.studies.impl.StudyImpl <em>Study</em>}' class.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
 		 * @see no.ntnu.tdt4250.oving1.studies.impl.StudyImpl
 		 * @see no.ntnu.tdt4250.oving1.studies.impl.StudiesPackageImpl#getStudy()
 		 * @generated
@@ -1089,9 +1006,8 @@ public interface StudiesPackage extends EPackage {
 		EClass STUDY = eINSTANCE.getStudy();
 
 		/**
-		 * The meta object literal for the '<em><b>Study Instances</b></em>' containment
-		 * reference list feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 * The meta object literal for the '<em><b>Study Instances</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference STUDY__STUDY_INSTANCES = eINSTANCE.getStudy_StudyInstances();
@@ -1099,7 +1015,6 @@ public interface StudiesPackage extends EPackage {
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
 		 * @generated
 		 */
 		EAttribute STUDY__NAME = eINSTANCE.getStudy_Name();
@@ -1107,16 +1022,13 @@ public interface StudiesPackage extends EPackage {
 		/**
 		 * The meta object literal for the '<em><b>Code</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
 		 * @generated
 		 */
 		EAttribute STUDY__CODE = eINSTANCE.getStudy_Code();
 
 		/**
-		 * The meta object literal for the
-		 * '{@link no.ntnu.tdt4250.oving1.studies.impl.StudyInstanceImpl <em>Study
-		 * Instance</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 * The meta object literal for the '{@link no.ntnu.tdt4250.oving1.studies.impl.StudyInstanceImpl <em>Study Instance</em>}' class.
+		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @see no.ntnu.tdt4250.oving1.studies.impl.StudyInstanceImpl
 		 * @see no.ntnu.tdt4250.oving1.studies.impl.StudiesPackageImpl#getStudyInstance()
 		 * @generated
@@ -1124,17 +1036,15 @@ public interface StudiesPackage extends EPackage {
 		EClass STUDY_INSTANCE = eINSTANCE.getStudyInstance();
 
 		/**
-		 * The meta object literal for the '<em><b>Study</b></em>' container reference
-		 * feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 * The meta object literal for the '<em><b>Study</b></em>' container reference feature.
+		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference STUDY_INSTANCE__STUDY = eINSTANCE.getStudyInstance_Study();
 
 		/**
-		 * The meta object literal for the '<em><b>Start Year</b></em>' containment
-		 * reference feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 * The meta object literal for the '<em><b>Start Year</b></em>' containment reference feature.
+		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference STUDY_INSTANCE__START_YEAR = eINSTANCE.getStudyInstance_StartYear();
@@ -1142,16 +1052,13 @@ public interface StudiesPackage extends EPackage {
 		/**
 		 * The meta object literal for the '<em><b>Year</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
 		 * @generated
 		 */
 		EAttribute STUDY_INSTANCE__YEAR = eINSTANCE.getStudyInstance_Year();
 
 		/**
-		 * The meta object literal for the
-		 * '{@link no.ntnu.tdt4250.oving1.studies.impl.StudyYearImpl <em>Study
-		 * Year</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 * The meta object literal for the '{@link no.ntnu.tdt4250.oving1.studies.impl.StudyYearImpl <em>Study Year</em>}' class.
+		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @see no.ntnu.tdt4250.oving1.studies.impl.StudyYearImpl
 		 * @see no.ntnu.tdt4250.oving1.studies.impl.StudiesPackageImpl#getStudyYear()
 		 * @generated
@@ -1159,42 +1066,37 @@ public interface StudiesPackage extends EPackage {
 		EClass STUDY_YEAR = eINSTANCE.getStudyYear();
 
 		/**
-		 * The meta object literal for the '<em><b>Next Year</b></em>' containment
-		 * reference list feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 * The meta object literal for the '<em><b>Next Year</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference STUDY_YEAR__NEXT_YEAR = eINSTANCE.getStudyYear_NextYear();
 
 		/**
-		 * The meta object literal for the '<em><b>Program Name</b></em>' attribute
-		 * feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 * The meta object literal for the '<em><b>Program Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
 		EAttribute STUDY_YEAR__PROGRAM_NAME = eINSTANCE.getStudyYear_ProgramName();
 
 		/**
-		 * The meta object literal for the '<em><b>Spring Semester</b></em>' containment
-		 * reference feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 * The meta object literal for the '<em><b>Spring Semester</b></em>' containment reference feature.
+		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference STUDY_YEAR__SPRING_SEMESTER = eINSTANCE.getStudyYear_SpringSemester();
 
 		/**
-		 * The meta object literal for the '<em><b>Fall Semester</b></em>' containment
-		 * reference feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 * The meta object literal for the '<em><b>Autumn Semester</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference STUDY_YEAR__FALL_SEMESTER = eINSTANCE.getStudyYear_FallSemester();
+		EReference STUDY_YEAR__AUTUMN_SEMESTER = eINSTANCE.getStudyYear_AutumnSemester();
 
 		/**
-		 * The meta object literal for the
-		 * '{@link no.ntnu.tdt4250.oving1.studies.impl.StudyCourseImpl <em>Study
-		 * Course</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 * The meta object literal for the '{@link no.ntnu.tdt4250.oving1.studies.impl.StudyCourseImpl <em>Study Course</em>}' class.
+		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @see no.ntnu.tdt4250.oving1.studies.impl.StudyCourseImpl
 		 * @see no.ntnu.tdt4250.oving1.studies.impl.StudiesPackageImpl#getStudyCourse()
 		 * @generated
@@ -1202,26 +1104,22 @@ public interface StudiesPackage extends EPackage {
 		EClass STUDY_COURSE = eINSTANCE.getStudyCourse();
 
 		/**
-		 * The meta object literal for the '<em><b>Course Instance</b></em>' reference
-		 * feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 * The meta object literal for the '<em><b>Course Instance</b></em>' reference feature.
+		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference STUDY_COURSE__COURSE_INSTANCE = eINSTANCE.getStudyCourse_CourseInstance();
 
 		/**
-		 * The meta object literal for the '<em><b>Mandatory</b></em>' attribute
-		 * feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 * The meta object literal for the '<em><b>Mandatory</b></em>' attribute feature.
+		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
 		EAttribute STUDY_COURSE__MANDATORY = eINSTANCE.getStudyCourse_Mandatory();
 
 		/**
-		 * The meta object literal for the
-		 * '{@link no.ntnu.tdt4250.oving1.studies.impl.SemesterImpl <em>Semester</em>}'
-		 * class. <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 * The meta object literal for the '{@link no.ntnu.tdt4250.oving1.studies.impl.SemesterImpl <em>Semester</em>}' class.
+		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @see no.ntnu.tdt4250.oving1.studies.impl.SemesterImpl
 		 * @see no.ntnu.tdt4250.oving1.studies.impl.StudiesPackageImpl#getSemester()
 		 * @generated
@@ -1229,18 +1127,23 @@ public interface StudiesPackage extends EPackage {
 		EClass SEMESTER = eINSTANCE.getSemester();
 
 		/**
-		 * The meta object literal for the '<em><b>Courses</b></em>' reference list
-		 * feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 * The meta object literal for the '<em><b>Courses</b></em>' reference list feature.
+		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference SEMESTER__COURSES = eINSTANCE.getSemester_Courses();
 
 		/**
-		 * The meta object literal for the
-		 * '{@link no.ntnu.tdt4250.oving1.studies.SemesterCode <em>Semester Code</em>}'
-		 * enum. <!-- begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 * The meta object literal for the '<em><b>Semester Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SEMESTER__SEMESTER_CODE = eINSTANCE.getSemester_SemesterCode();
+
+		/**
+		 * The meta object literal for the '{@link no.ntnu.tdt4250.oving1.studies.SemesterCode <em>Semester Code</em>}' enum.
+		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @see no.ntnu.tdt4250.oving1.studies.SemesterCode
 		 * @see no.ntnu.tdt4250.oving1.studies.impl.StudiesPackageImpl#getSemesterCode()
 		 * @generated

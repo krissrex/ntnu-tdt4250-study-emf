@@ -12,10 +12,8 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- * <li>{@link no.ntnu.tdt4250.oving1.studies.StudyCourse#getCourseInstance
- * <em>Course Instance</em>}</li>
- * <li>{@link no.ntnu.tdt4250.oving1.studies.StudyCourse#isMandatory
- * <em>Mandatory</em>}</li>
+ *   <li>{@link no.ntnu.tdt4250.oving1.studies.StudyCourse#getCourseInstance <em>Course Instance</em>}</li>
+ *   <li>{@link no.ntnu.tdt4250.oving1.studies.StudyCourse#isMandatory <em>Mandatory</em>}</li>
  * </ul>
  *
  * @see no.ntnu.tdt4250.oving1.studies.StudiesPackage#getStudyCourse()
@@ -36,11 +34,9 @@ public interface StudyCourse extends EObject {
 	CourseInstance getCourseInstance();
 
 	/**
-	 * Sets the value of the
-	 * '{@link no.ntnu.tdt4250.oving1.studies.StudyCourse#getCourseInstance
-	 * <em>Course Instance</em>}' reference. <!-- begin-user-doc --> <!--
+	 * Sets the value of the '{@link no.ntnu.tdt4250.oving1.studies.StudyCourse#getCourseInstance <em>Course Instance</em>}' reference.
+	 * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
 	 * @param value the new value of the '<em>Course Instance</em>' reference.
 	 * @see #getCourseInstance()
 	 * @generated
@@ -60,10 +56,8 @@ public interface StudyCourse extends EObject {
 	boolean isMandatory();
 
 	/**
-	 * Sets the value of the
-	 * '{@link no.ntnu.tdt4250.oving1.studies.StudyCourse#isMandatory
-	 * <em>Mandatory</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * Sets the value of the '{@link no.ntnu.tdt4250.oving1.studies.StudyCourse#isMandatory <em>Mandatory</em>}' attribute.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Mandatory</em>' attribute.
 	 * @see #isMandatory()
 	 * @generated

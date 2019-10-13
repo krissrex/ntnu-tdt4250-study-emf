@@ -26,22 +26,18 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- * <li>{@link no.ntnu.tdt4250.oving1.studies.impl.StudyImpl#getStudyInstances
- * <em>Study Instances</em>}</li>
- * <li>{@link no.ntnu.tdt4250.oving1.studies.impl.StudyImpl#getName
- * <em>Name</em>}</li>
- * <li>{@link no.ntnu.tdt4250.oving1.studies.impl.StudyImpl#getCode
- * <em>Code</em>}</li>
+ *   <li>{@link no.ntnu.tdt4250.oving1.studies.impl.StudyImpl#getStudyInstances <em>Study Instances</em>}</li>
+ *   <li>{@link no.ntnu.tdt4250.oving1.studies.impl.StudyImpl#getName <em>Name</em>}</li>
+ *   <li>{@link no.ntnu.tdt4250.oving1.studies.impl.StudyImpl#getCode <em>Code</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class StudyImpl extends MinimalEObjectImpl.Container implements Study {
 	/**
-	 * The cached value of the '{@link #getStudyInstances() <em>Study
-	 * Instances</em>}' containment reference list. <!-- begin-user-doc --> <!--
+	 * The cached value of the '{@link #getStudyInstances() <em>Study Instances</em>}' containment reference list.
+	 * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
 	 * @see #getStudyInstances()
 	 * @generated
 	 * @ordered
@@ -90,7 +86,6 @@ public class StudyImpl extends MinimalEObjectImpl.Container implements Study {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	protected StudyImpl() {
@@ -99,7 +94,6 @@ public class StudyImpl extends MinimalEObjectImpl.Container implements Study {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -109,21 +103,18 @@ public class StudyImpl extends MinimalEObjectImpl.Container implements Study {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
 	public EList<StudyInstance> getStudyInstances() {
 		if (studyInstances == null) {
-			studyInstances = new EObjectContainmentWithInverseEList<StudyInstance>(StudyInstance.class, this,
-					StudiesPackage.STUDY__STUDY_INSTANCES, StudiesPackage.STUDY_INSTANCE__STUDY);
+			studyInstances = new EObjectContainmentWithInverseEList<StudyInstance>(StudyInstance.class, this, StudiesPackage.STUDY__STUDY_INSTANCES, StudiesPackage.STUDY_INSTANCE__STUDY);
 		}
 		return studyInstances;
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public String getName() {
@@ -132,7 +123,6 @@ public class StudyImpl extends MinimalEObjectImpl.Container implements Study {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public void setName(String newName) {
@@ -144,7 +134,6 @@ public class StudyImpl extends MinimalEObjectImpl.Container implements Study {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public String getCode() {
@@ -153,7 +142,6 @@ public class StudyImpl extends MinimalEObjectImpl.Container implements Study {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public void setCode(String newCode) {
@@ -165,122 +153,114 @@ public class StudyImpl extends MinimalEObjectImpl.Container implements Study {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case StudiesPackage.STUDY__STUDY_INSTANCES:
-			return ((InternalEList<InternalEObject>) (InternalEList<?>) getStudyInstances()).basicAdd(otherEnd, msgs);
+			case StudiesPackage.STUDY__STUDY_INSTANCES:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getStudyInstances()).basicAdd(otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case StudiesPackage.STUDY__STUDY_INSTANCES:
-			return ((InternalEList<?>) getStudyInstances()).basicRemove(otherEnd, msgs);
+			case StudiesPackage.STUDY__STUDY_INSTANCES:
+				return ((InternalEList<?>)getStudyInstances()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case StudiesPackage.STUDY__STUDY_INSTANCES:
-			return getStudyInstances();
-		case StudiesPackage.STUDY__NAME:
-			return getName();
-		case StudiesPackage.STUDY__CODE:
-			return getCode();
+			case StudiesPackage.STUDY__STUDY_INSTANCES:
+				return getStudyInstances();
+			case StudiesPackage.STUDY__NAME:
+				return getName();
+			case StudiesPackage.STUDY__CODE:
+				return getCode();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case StudiesPackage.STUDY__STUDY_INSTANCES:
-			getStudyInstances().clear();
-			getStudyInstances().addAll((Collection<? extends StudyInstance>) newValue);
-			return;
-		case StudiesPackage.STUDY__NAME:
-			setName((String) newValue);
-			return;
-		case StudiesPackage.STUDY__CODE:
-			setCode((String) newValue);
-			return;
+			case StudiesPackage.STUDY__STUDY_INSTANCES:
+				getStudyInstances().clear();
+				getStudyInstances().addAll((Collection<? extends StudyInstance>)newValue);
+				return;
+			case StudiesPackage.STUDY__NAME:
+				setName((String)newValue);
+				return;
+			case StudiesPackage.STUDY__CODE:
+				setCode((String)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case StudiesPackage.STUDY__STUDY_INSTANCES:
-			getStudyInstances().clear();
-			return;
-		case StudiesPackage.STUDY__NAME:
-			setName(NAME_EDEFAULT);
-			return;
-		case StudiesPackage.STUDY__CODE:
-			setCode(CODE_EDEFAULT);
-			return;
+			case StudiesPackage.STUDY__STUDY_INSTANCES:
+				getStudyInstances().clear();
+				return;
+			case StudiesPackage.STUDY__NAME:
+				setName(NAME_EDEFAULT);
+				return;
+			case StudiesPackage.STUDY__CODE:
+				setCode(CODE_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case StudiesPackage.STUDY__STUDY_INSTANCES:
-			return studyInstances != null && !studyInstances.isEmpty();
-		case StudiesPackage.STUDY__NAME:
-			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-		case StudiesPackage.STUDY__CODE:
-			return CODE_EDEFAULT == null ? code != null : !CODE_EDEFAULT.equals(code);
+			case StudiesPackage.STUDY__STUDY_INSTANCES:
+				return studyInstances != null && !studyInstances.isEmpty();
+			case StudiesPackage.STUDY__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case StudiesPackage.STUDY__CODE:
+				return CODE_EDEFAULT == null ? code != null : !CODE_EDEFAULT.equals(code);
 		}
 		return super.eIsSet(featureID);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public String toString() {
-		if (eIsProxy())
-			return super.toString();
+		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (name: ");

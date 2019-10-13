@@ -12,6 +12,7 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 
@@ -22,17 +23,16 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  * The following features are implemented:
  * </p>
  * <ul>
- * <li>{@link no.ntnu.tdt4250.oving1.studies.impl.SemesterImpl#getCourses
- * <em>Courses</em>}</li>
+ *   <li>{@link no.ntnu.tdt4250.oving1.studies.impl.SemesterImpl#getCourses <em>Courses</em>}</li>
+ *   <li>{@link no.ntnu.tdt4250.oving1.studies.impl.SemesterImpl#getSemesterCode <em>Semester Code</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class SemesterImpl extends MinimalEObjectImpl.Container implements Semester {
 	/**
-	 * The cached value of the '{@link #getCourses() <em>Courses</em>}' reference
-	 * list. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The cached value of the '{@link #getCourses() <em>Courses</em>}' reference list.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #getCourses()
 	 * @generated
 	 * @ordered
@@ -40,8 +40,17 @@ public class SemesterImpl extends MinimalEObjectImpl.Container implements Semest
 	protected EList<CourseInstance> courses;
 
 	/**
+	 * The cached setting delegate for the '{@link #getSemesterCode() <em>Semester Code</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSemesterCode()
+	 * @generated
+	 * @ordered
+	 */
+	protected EStructuralFeature.Internal.SettingDelegate SEMESTER_CODE__ESETTING_DELEGATE = ((EStructuralFeature.Internal)StudiesPackage.Literals.SEMESTER__SEMESTER_CODE).getSettingDelegate();
+
+	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	protected SemesterImpl() {
@@ -50,7 +59,6 @@ public class SemesterImpl extends MinimalEObjectImpl.Container implements Semest
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -60,74 +68,81 @@ public class SemesterImpl extends MinimalEObjectImpl.Container implements Semest
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
 	public EList<CourseInstance> getCourses() {
 		if (courses == null) {
-			courses = new EObjectResolvingEList<CourseInstance>(CourseInstance.class, this,
-					StudiesPackage.SEMESTER__COURSES);
+			courses = new EObjectResolvingEList<CourseInstance>(CourseInstance.class, this, StudiesPackage.SEMESTER__COURSES);
 		}
 		return courses;
 	}
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getSemesterCode() {
+		return (String)SEMESTER_CODE__ESETTING_DELEGATE.dynamicGet(this, null, 0, true, false);
+	}
+
+	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case StudiesPackage.SEMESTER__COURSES:
-			return getCourses();
+			case StudiesPackage.SEMESTER__COURSES:
+				return getCourses();
+			case StudiesPackage.SEMESTER__SEMESTER_CODE:
+				return getSemesterCode();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case StudiesPackage.SEMESTER__COURSES:
-			getCourses().clear();
-			getCourses().addAll((Collection<? extends CourseInstance>) newValue);
-			return;
+			case StudiesPackage.SEMESTER__COURSES:
+				getCourses().clear();
+				getCourses().addAll((Collection<? extends CourseInstance>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case StudiesPackage.SEMESTER__COURSES:
-			getCourses().clear();
-			return;
+			case StudiesPackage.SEMESTER__COURSES:
+				getCourses().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case StudiesPackage.SEMESTER__COURSES:
-			return courses != null && !courses.isEmpty();
+			case StudiesPackage.SEMESTER__COURSES:
+				return courses != null && !courses.isEmpty();
+			case StudiesPackage.SEMESTER__SEMESTER_CODE:
+				return SEMESTER_CODE__ESETTING_DELEGATE.dynamicIsSet(this, null, 0);
 		}
 		return super.eIsSet(featureID);
 	}

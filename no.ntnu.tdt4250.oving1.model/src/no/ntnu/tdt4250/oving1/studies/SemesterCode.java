@@ -12,16 +12,15 @@ import org.eclipse.emf.common.util.Enumerator;
  * <!-- begin-user-doc --> A representation of the literals of the enumeration
  * '<em><b>Semester Code</b></em>', and utility methods for working with them.
  * <!-- end-user-doc -->
- * 
  * @see no.ntnu.tdt4250.oving1.studies.StudiesPackage#getSemesterCode()
- * @model
+ * @model instanceClass="no.ntnu.tdt4250.oving1.studies.SemesterCode"
  * @generated
  */
 public enum SemesterCode implements Enumerator {
 	/**
-	 * The '<em><b>Spring</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * The '<em><b>Spring</b></em>' literal object.
+	 * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
 	 * @see #SPRING_VALUE
 	 * @generated
 	 * @ordered
@@ -29,9 +28,9 @@ public enum SemesterCode implements Enumerator {
 	SPRING(0, "Spring", "Spring"),
 
 	/**
-	 * The '<em><b>Autumn</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * The '<em><b>Autumn</b></em>' literal object.
+	 * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
 	 * @see #AUTUMN_VALUE
 	 * @generated
 	 * @ordered
@@ -39,9 +38,9 @@ public enum SemesterCode implements Enumerator {
 	AUTUMN(1, "Autumn", "Autumn");
 
 	/**
-	 * The '<em><b>Spring</b></em>' literal value. <!-- begin-user-doc --> <!--
+	 * The '<em><b>Spring</b></em>' literal value.
+	 * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
 	 * @see #SPRING
 	 * @model name="Spring"
 	 * @generated
@@ -50,9 +49,9 @@ public enum SemesterCode implements Enumerator {
 	public static final int SPRING_VALUE = 0;
 
 	/**
-	 * The '<em><b>Autumn</b></em>' literal value. <!-- begin-user-doc --> <!--
+	 * The '<em><b>Autumn</b></em>' literal value.
+	 * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
 	 * @see #AUTUMN
 	 * @model name="Autumn"
 	 * @generated
@@ -66,20 +65,21 @@ public enum SemesterCode implements Enumerator {
 	 * 
 	 * @generated
 	 */
-	private static final SemesterCode[] VALUES_ARRAY = new SemesterCode[] { SPRING, AUTUMN, };
+	private static final SemesterCode[] VALUES_ARRAY = new SemesterCode[] {
+			SPRING,
+			AUTUMN,
+		};
 
 	/**
-	 * A public read-only list of all the '<em><b>Semester Code</b></em>'
-	 * enumerators. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * A public read-only list of all the '<em><b>Semester Code</b></em>' enumerators.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	public static final List<SemesterCode> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-	 * Returns the '<em><b>Semester Code</b></em>' literal with the specified
-	 * literal value. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * Returns the '<em><b>Semester Code</b></em>' literal with the specified literal value.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @param literal the literal.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
@@ -97,7 +97,6 @@ public enum SemesterCode implements Enumerator {
 	/**
 	 * Returns the '<em><b>Semester Code</b></em>' literal with the specified name.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @param name the name.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
@@ -113,48 +112,42 @@ public enum SemesterCode implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>Semester Code</b></em>' literal with the specified
-	 * integer value. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * Returns the '<em><b>Semester Code</b></em>' literal with the specified integer value.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @param value the integer value.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static SemesterCode get(int value) {
 		switch (value) {
-		case SPRING_VALUE:
-			return SPRING;
-		case AUTUMN_VALUE:
-			return AUTUMN;
+			case SPRING_VALUE: return SPRING;
+			case AUTUMN_VALUE: return AUTUMN;
 		}
 		return null;
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	private final int value;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	private final String name;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	private final String literal;
 
 	/**
-	 * Only this class can construct instances. <!-- begin-user-doc --> <!--
+	 * Only this class can construct instances.
+	 * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	private SemesterCode(int value, String name, String literal) {
@@ -165,35 +158,31 @@ public enum SemesterCode implements Enumerator {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public int getValue() {
-		return value;
+	  return value;
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public String getName() {
-		return name;
+	  return name;
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public String getLiteral() {
-		return literal;
+	  return literal;
 	}
 
 	/**
-	 * Returns the literal value of the enumerator, which is its string
-	 * representation. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * Returns the literal value of the enumerator, which is its string representation.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override

@@ -15,22 +15,21 @@ import org.eclipse.emf.ecore.EObject;
  * <!-- begin-user-doc --> The <b>Adapter Factory</b> for the model. It provides
  * an adapter <code>createXXX</code> method for each class of the model. <!--
  * end-user-doc -->
- * 
  * @see no.ntnu.tdt4250.oving1.studies.StudiesPackage
  * @generated
  */
 public class StudiesAdapterFactory extends AdapterFactoryImpl {
 	/**
-	 * The cached model package. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The cached model package.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected static StudiesPackage modelPackage;
 
 	/**
-	 * Creates an instance of the adapter factory. <!-- begin-user-doc --> <!--
+	 * Creates an instance of the adapter factory.
+	 * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public StudiesAdapterFactory() {
@@ -54,7 +53,7 @@ public class StudiesAdapterFactory extends AdapterFactoryImpl {
 			return true;
 		}
 		if (object instanceof EObject) {
-			return ((EObject) object).eClass().getEPackage() == modelPackage;
+			return ((EObject)object).eClass().getEPackage() == modelPackage;
 		}
 		return false;
 	}
@@ -66,63 +65,55 @@ public class StudiesAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	protected StudiesSwitch<Adapter> modelSwitch = new StudiesSwitch<Adapter>() {
-		@Override
-		public Adapter caseUniversity(University object) {
-			return createUniversityAdapter();
-		}
-
-		@Override
-		public Adapter caseCourse(Course object) {
-			return createCourseAdapter();
-		}
-
-		@Override
-		public Adapter caseCourseInstance(CourseInstance object) {
-			return createCourseInstanceAdapter();
-		}
-
-		@Override
-		public Adapter caseStudy(Study object) {
-			return createStudyAdapter();
-		}
-
-		@Override
-		public Adapter caseStudyInstance(StudyInstance object) {
-			return createStudyInstanceAdapter();
-		}
-
-		@Override
-		public Adapter caseStudyYear(StudyYear object) {
-			return createStudyYearAdapter();
-		}
-
-		@Override
-		public Adapter caseStudyCourse(StudyCourse object) {
-			return createStudyCourseAdapter();
-		}
-
-		@Override
-		public Adapter caseSemester(Semester object) {
-			return createSemesterAdapter();
-		}
-
-		@Override
-		public Adapter defaultCase(EObject object) {
-			return createEObjectAdapter();
-		}
-	};
+			@Override
+			public Adapter caseUniversity(University object) {
+				return createUniversityAdapter();
+			}
+			@Override
+			public Adapter caseCourse(Course object) {
+				return createCourseAdapter();
+			}
+			@Override
+			public Adapter caseCourseInstance(CourseInstance object) {
+				return createCourseInstanceAdapter();
+			}
+			@Override
+			public Adapter caseStudy(Study object) {
+				return createStudyAdapter();
+			}
+			@Override
+			public Adapter caseStudyInstance(StudyInstance object) {
+				return createStudyInstanceAdapter();
+			}
+			@Override
+			public Adapter caseStudyYear(StudyYear object) {
+				return createStudyYearAdapter();
+			}
+			@Override
+			public Adapter caseStudyCourse(StudyCourse object) {
+				return createStudyCourseAdapter();
+			}
+			@Override
+			public Adapter caseSemester(Semester object) {
+				return createSemesterAdapter();
+			}
+			@Override
+			public Adapter defaultCase(EObject object) {
+				return createEObjectAdapter();
+			}
+		};
 
 	/**
-	 * Creates an adapter for the <code>target</code>. <!-- begin-user-doc --> <!--
+	 * Creates an adapter for the <code>target</code>.
+	 * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
 	 * @param target the object to adapt.
 	 * @return the adapter for the <code>target</code>.
 	 * @generated
 	 */
 	@Override
 	public Adapter createAdapter(Notifier target) {
-		return modelSwitch.doSwitch((EObject) target);
+		return modelSwitch.doSwitch((EObject)target);
 	}
 
 	/**
@@ -156,12 +147,10 @@ public class StudiesAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class
-	 * '{@link no.ntnu.tdt4250.oving1.studies.CourseInstance <em>Course
-	 * Instance</em>}'. <!-- begin-user-doc --> This default implementation returns
+	 * Creates a new adapter for an object of class '{@link no.ntnu.tdt4250.oving1.studies.CourseInstance <em>Course Instance</em>}'.
+	 * <!-- begin-user-doc --> This default implementation returns
 	 * null so that we can easily ignore cases; it's useful to ignore a case when
 	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
-	 * 
 	 * @return the new adapter.
 	 * @see no.ntnu.tdt4250.oving1.studies.CourseInstance
 	 * @generated
@@ -186,12 +175,10 @@ public class StudiesAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class
-	 * '{@link no.ntnu.tdt4250.oving1.studies.StudyInstance <em>Study
-	 * Instance</em>}'. <!-- begin-user-doc --> This default implementation returns
+	 * Creates a new adapter for an object of class '{@link no.ntnu.tdt4250.oving1.studies.StudyInstance <em>Study Instance</em>}'.
+	 * <!-- begin-user-doc --> This default implementation returns
 	 * null so that we can easily ignore cases; it's useful to ignore a case when
 	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
-	 * 
 	 * @return the new adapter.
 	 * @see no.ntnu.tdt4250.oving1.studies.StudyInstance
 	 * @generated
@@ -216,12 +203,10 @@ public class StudiesAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class
-	 * '{@link no.ntnu.tdt4250.oving1.studies.StudyCourse <em>Study Course</em>}'.
+	 * Creates a new adapter for an object of class '{@link no.ntnu.tdt4250.oving1.studies.StudyCourse <em>Study Course</em>}'.
 	 * <!-- begin-user-doc --> This default implementation returns null so that we
 	 * can easily ignore cases; it's useful to ignore a case when inheritance will
 	 * catch all the cases anyway. <!-- end-user-doc -->
-	 * 
 	 * @return the new adapter.
 	 * @see no.ntnu.tdt4250.oving1.studies.StudyCourse
 	 * @generated
@@ -246,9 +231,9 @@ public class StudiesAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for the default case. <!-- begin-user-doc --> This
+	 * Creates a new adapter for the default case.
+	 * <!-- begin-user-doc --> This
 	 * default implementation returns null. <!-- end-user-doc -->
-	 * 
 	 * @return the new adapter.
 	 * @generated
 	 */

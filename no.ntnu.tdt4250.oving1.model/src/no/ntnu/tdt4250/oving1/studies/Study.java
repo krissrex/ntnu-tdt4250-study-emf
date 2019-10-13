@@ -14,10 +14,9 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- * <li>{@link no.ntnu.tdt4250.oving1.studies.Study#getStudyInstances <em>Study
- * Instances</em>}</li>
- * <li>{@link no.ntnu.tdt4250.oving1.studies.Study#getName <em>Name</em>}</li>
- * <li>{@link no.ntnu.tdt4250.oving1.studies.Study#getCode <em>Code</em>}</li>
+ *   <li>{@link no.ntnu.tdt4250.oving1.studies.Study#getStudyInstances <em>Study Instances</em>}</li>
+ *   <li>{@link no.ntnu.tdt4250.oving1.studies.Study#getName <em>Name</em>}</li>
+ *   <li>{@link no.ntnu.tdt4250.oving1.studies.Study#getCode <em>Code</em>}</li>
  * </ul>
  *
  * @see no.ntnu.tdt4250.oving1.studies.StudiesPackage#getStudy()
@@ -26,14 +25,11 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface Study extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Study Instances</b></em>' containment
-	 * reference list. The list contents are of type
-	 * {@link no.ntnu.tdt4250.oving1.studies.StudyInstance}. It is bidirectional and
-	 * its opposite is '{@link no.ntnu.tdt4250.oving1.studies.StudyInstance#getStudy
-	 * <em>Study</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @return the value of the '<em>Study Instances</em>' containment reference
-	 *         list.
+	 * Returns the value of the '<em><b>Study Instances</b></em>' containment reference list.
+	 * The list contents are of type {@link no.ntnu.tdt4250.oving1.studies.StudyInstance}.
+	 * It is bidirectional and its opposite is '{@link no.ntnu.tdt4250.oving1.studies.StudyInstance#getStudy <em>Study</em>}'.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @return the value of the '<em>Study Instances</em>' containment reference list.
 	 * @see no.ntnu.tdt4250.oving1.studies.StudiesPackage#getStudy_StudyInstances()
 	 * @see no.ntnu.tdt4250.oving1.studies.StudyInstance#getStudy
 	 * @model opposite="study" containment="true"
@@ -54,9 +50,8 @@ public interface Study extends EObject {
 	String getName();
 
 	/**
-	 * Sets the value of the '{@link no.ntnu.tdt4250.oving1.studies.Study#getName
-	 * <em>Name</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * Sets the value of the '{@link no.ntnu.tdt4250.oving1.studies.Study#getName <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Name</em>' attribute.
 	 * @see #getName()
 	 * @generated
@@ -76,9 +71,8 @@ public interface Study extends EObject {
 	String getCode();
 
 	/**
-	 * Sets the value of the '{@link no.ntnu.tdt4250.oving1.studies.Study#getCode
-	 * <em>Code</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * Sets the value of the '{@link no.ntnu.tdt4250.oving1.studies.Study#getCode <em>Code</em>}' attribute.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Code</em>' attribute.
 	 * @see #getCode()
 	 * @generated

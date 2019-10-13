@@ -12,14 +12,10 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- * <li>{@link no.ntnu.tdt4250.oving1.studies.CourseInstance#getCourse
- * <em>Course</em>}</li>
- * <li>{@link no.ntnu.tdt4250.oving1.studies.CourseInstance#getYear
- * <em>Year</em>}</li>
- * <li>{@link no.ntnu.tdt4250.oving1.studies.CourseInstance#getSemester
- * <em>Semester</em>}</li>
- * <li>{@link no.ntnu.tdt4250.oving1.studies.CourseInstance#getInstanceName
- * <em>Instance Name</em>}</li>
+ *   <li>{@link no.ntnu.tdt4250.oving1.studies.CourseInstance#getCourse <em>Course</em>}</li>
+ *   <li>{@link no.ntnu.tdt4250.oving1.studies.CourseInstance#getYear <em>Year</em>}</li>
+ *   <li>{@link no.ntnu.tdt4250.oving1.studies.CourseInstance#getSemester <em>Semester</em>}</li>
+ *   <li>{@link no.ntnu.tdt4250.oving1.studies.CourseInstance#getInstanceName <em>Instance Name</em>}</li>
  * </ul>
  *
  * @see no.ntnu.tdt4250.oving1.studies.StudiesPackage#getCourseInstance()
@@ -40,11 +36,9 @@ public interface CourseInstance extends EObject {
 	Course getCourse();
 
 	/**
-	 * Sets the value of the
-	 * '{@link no.ntnu.tdt4250.oving1.studies.CourseInstance#getCourse
-	 * <em>Course</em>}' reference. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @param value the new value of the '<em>Course</em>' reference.
+	 * Sets the value of the '{@link no.ntnu.tdt4250.oving1.studies.CourseInstance#getCourse <em>Course</em>}' container reference.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Course</em>' container reference.
 	 * @see #getCourse()
 	 * @generated
 	 */
@@ -63,10 +57,8 @@ public interface CourseInstance extends EObject {
 	int getYear();
 
 	/**
-	 * Sets the value of the
-	 * '{@link no.ntnu.tdt4250.oving1.studies.CourseInstance#getYear <em>Year</em>}'
-	 * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * Sets the value of the '{@link no.ntnu.tdt4250.oving1.studies.CourseInstance#getYear <em>Year</em>}' attribute.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Year</em>' attribute.
 	 * @see #getYear()
 	 * @generated
@@ -74,24 +66,21 @@ public interface CourseInstance extends EObject {
 	void setYear(int value);
 
 	/**
-	 * Returns the value of the '<em><b>Semester</b></em>' attribute. The literals
-	 * are from the enumeration {@link no.ntnu.tdt4250.oving1.studies.SemesterCode}.
+	 * Returns the value of the '<em><b>Semester</b></em>' attribute.
+	 * The literals are from the enumeration {@link no.ntnu.tdt4250.oving1.studies.SemesterCode}.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @return the value of the '<em>Semester</em>' attribute.
 	 * @see no.ntnu.tdt4250.oving1.studies.SemesterCode
 	 * @see #setSemester(SemesterCode)
 	 * @see no.ntnu.tdt4250.oving1.studies.StudiesPackage#getCourseInstance_Semester()
-	 * @model required="true"
+	 * @model dataType="no.ntnu.tdt4250.oving1.studies.SemesterCode" required="true"
 	 * @generated
 	 */
 	SemesterCode getSemester();
 
 	/**
-	 * Sets the value of the
-	 * '{@link no.ntnu.tdt4250.oving1.studies.CourseInstance#getSemester
-	 * <em>Semester</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * Sets the value of the '{@link no.ntnu.tdt4250.oving1.studies.CourseInstance#getSemester <em>Semester</em>}' attribute.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Semester</em>' attribute.
 	 * @see no.ntnu.tdt4250.oving1.studies.SemesterCode
 	 * @see #getSemester()
