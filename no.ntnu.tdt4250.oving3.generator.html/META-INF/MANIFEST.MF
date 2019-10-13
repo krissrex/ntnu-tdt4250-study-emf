@@ -34,5 +34,6 @@ Bundle-RequiredExecutionEnvironment: JavaSE-11
 Bundle-ActivationPolicy: lazy
 Eclipse-LazyStart: true
 Export-Package: no.ntnu.tdt4250.oving3.generator.html,
- no.ntnu.tdt4250.oving3.generator.html.files
+ no.ntnu.tdt4250.oving3.generator.html.files,
+ no.ntnu.tdt4250.oving3.generator.html.services
 

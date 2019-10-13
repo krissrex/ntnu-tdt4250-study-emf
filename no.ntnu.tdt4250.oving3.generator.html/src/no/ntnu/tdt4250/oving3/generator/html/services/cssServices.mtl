@@ -1,0 +1,7 @@
+[comment encoding = UTF-8 /]
+[module cssServices('http://www.eclipse.org/emf/2002/Ecore', 'platform:/plugin/no.ntnu.tdt4250.oving1.model/model/studies.ecore')/]
+
+[query public createRandomCssRgb(anOclAny: OclAny) : String
+	= invoke('no.ntnu.tdt4250.oving3.generator.html.services.CssService', 'createRandomCssRgb()', Sequence{})
+/]
+
