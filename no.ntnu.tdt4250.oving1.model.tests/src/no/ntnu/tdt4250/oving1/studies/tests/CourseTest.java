@@ -11,7 +11,6 @@ import junit.framework.TestCase;
 import junit.textui.TestRunner;
 import no.ntnu.tdt4250.oving1.studies.Course;
 import no.ntnu.tdt4250.oving1.studies.StudiesFactory;
-import no.ntnu.tdt4250.oving1.studies.impl.StudiesPackageImpl;
 
 /**
  * <!-- begin-user-doc -->

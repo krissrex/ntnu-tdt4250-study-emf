@@ -13,6 +13,12 @@ import no.ntnu.tdt4250.oving1.studies.StudiesFactory;
  * <!-- begin-user-doc -->
  * A test case for the model object '<em><b>Semester</b></em>'.
  * <!-- end-user-doc -->
+ * <p>
+ * The following features are tested:
+ * <ul>
+ *   <li>{@link no.ntnu.tdt4250.oving1.studies.Semester#getSemesterCode() <em>Semester Code</em>}</li>
+ * </ul>
+ * </p>
  * @generated
  */
 public class SemesterTest extends TestCase {
@@ -84,6 +90,19 @@ public class SemesterTest extends TestCase {
 	@Override
 	protected void tearDown() throws Exception {
 		setFixture(null);
+	}
+
+	/**
+	 * Tests the '{@link no.ntnu.tdt4250.oving1.studies.Semester#getSemesterCode() <em>Semester Code</em>}' feature getter.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see no.ntnu.tdt4250.oving1.studies.Semester#getSemesterCode()
+	 * @generated
+	 */
+	public void testGetSemesterCode() {
+		// TODO: implement this feature getter test method
+		// Ensure that you remove @generated or mark it @generated NOT
+		fail();
 	}
 
 } //SemesterTest

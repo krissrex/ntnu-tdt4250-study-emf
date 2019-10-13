@@ -9,7 +9,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated studies -->
       <package
-            uri="platform:/plugins/no.ntnu.tdt4250.oving1.model/model/studies.ecore"
+            uri="platform:/plugin/no.ntnu.tdt4250.oving1.model/model/studies.ecore"
             class="no.ntnu.tdt4250.oving1.studies.StudiesPackage"
             genModel="model/studies.genmodel"/>
    </extension>

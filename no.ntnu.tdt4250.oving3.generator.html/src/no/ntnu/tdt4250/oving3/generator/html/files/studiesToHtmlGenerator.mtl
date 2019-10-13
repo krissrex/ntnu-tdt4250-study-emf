@@ -1,0 +1,88 @@
+[comment encoding = UTF-8 /]
+[module studiesToHtmlGenerator('platform:/plugin/no.ntnu.tdt4250.oving1.model/model/studies.ecore', 'http://www.eclipse.org/emf/2002/Ecore')]
+
+[import no::ntnu::tdt4250::oving3::generator::html::services::cssServices /]
+
+[template public generateHtml(university : University)]
+
+	[comment @main /]
+	[file (university.name.concat('.html'), false, 'UTF-8')]
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>[university.name/] Courses</title>
+<style>
+div { padding: 16px; }
+</style>
+</head>
+
+<body>
+
+<h1>Studies</h1>
+
+[for (study : Study | university.studies)]
+	[generateStudy(study)/]
+	<hline/><br/>
+[/for]
+
+</body>
+</html>
+	[/file]
+[/template]
+
+[template public generateStudy(study: Study)]
+	<h2>[study.name/] - [study.code/]</h2>
+	<div class="studyInstance">
+		[for (studyInstance : StudyInstance | study.studyInstances)]
+			[generateStudyInstance(studyInstance)/]
+		[/for]
+	</div>
+[/template]
+
+[template public generateStudyInstance(instance : StudyInstance)]
+	<h3>Kull [instance.year/]</h3>
+	[generateStudyInstanceYearRecursive(instance.startYear, instance.year, 1)/]
+[/template]
+
+[template public generateStudyInstanceYearRecursive(instanceYear : StudyYear, year: Integer, schoolYear: Integer)]
+	<h4>[schoolYear/]. År ([year/])</h4>
+	
+	[if (instanceYear.autumnSemester <> null)]
+		<h5>Høst</h5>
+		<table>
+		<tr> <th>Emnekode</th><th>Emnenavn</th><th>SP</th><th>Status</th> </tr>
+		[for (course : CourseInstance | instanceYear.autumnSemester.courses)]
+			[generateSemesterCourseTableRow(course)/]
+		[/for]
+		</table>
+	[/if]
+
+	[if (instanceYear.springSemester <> null)]
+		<h5>Vår</h5>
+		<table>
+		<tr> <th>Emnekode</th><th>Emnenavn</th><th>SP</th><th>Status</th> </tr>
+		[for (course : CourseInstance | instanceYear.springSemester.courses)]
+			[generateSemesterCourseTableRow(course)/]
+		[/for]
+		</table>
+	[/if]
+
+	[if (instanceYear.nextYear <> null)]
+		[if (instanceYear.nextYear->size() = 1)]
+			[generateStudyInstanceYearRecursive(instanceYear.nextYear->first(), year + 1, schoolYear + 1)/]		
+		[else]
+			[for (program : StudyYear | instanceYear.nextYear)]
+				<div style="background-color: [createRandomCssRgb() /]">
+				<h6>Retning: [program.programName/]</h6>
+				[generateStudyInstanceYearRecursive(program, year + 1, schoolYear + 1)/]
+				</div>
+			[/for]
+		[/if]
+	[/if]
+[/template]
+
+[template public generateSemesterCourseTableRow(course : CourseInstance)]
+<tr>
+	<td>[course.course.code/]</td><td>[course.course.name/]</td><td>[course.course.studyPoints/]</td><td>TBD</td>
+</tr>
+[/template]

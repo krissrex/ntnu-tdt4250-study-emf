@@ -3,46 +3,106 @@
     xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:studies="platform:/plugins/no.ntnu.tdt4250.oving1.model/model/studies.ecore"
-    xsi:schemaLocation="platform:/plugins/no.ntnu.tdt4250.oving1.model/model/studies.ecore studies.ecore"
+    xmlns:studies="platform:/plugin/no.ntnu.tdt4250.oving1.model/model/studies.ecore"
+    xsi:schemaLocation="platform:/plugin/no.ntnu.tdt4250.oving1.model/model/studies.ecore studies.ecore"
     name="NTNU">
-  <courseInstances
-      course="//@courses.0"
-      year="2019"
-      semester="Autumn"/>
-  <courseInstances
-      course="//@courses.1"
-      year="2016"
-      semester="Autumn"/>
-  <courseInstances
-      course="//@courses.2"
-      year="2017"/>
-  <courseInstances
-      course="//@courses.3"
-      year="2018"
-      semester="Autumn"/>
-  <courseInstances
-      course="//@courses.4"
-      year="2019"
-      semester="Autumn"/>
   <courses name="Avansert Programvaredesign"
       code="TDT4250"
-      studyPoints="7.5"/>
+      studyPoints="7.5">
+    <courseInstances
+        year="2019"
+        semester="Autumn"/>
+  </courses>
   <courses name="Matematikk 1"
       code="TMA4100"
-      studyPoints="7.5"/>
+      studyPoints="7.5">
+    <courseInstances
+        year="2016"
+        semester="Autumn"/>
+  </courses>
   <courses name="Matematikk 3"
       code="TMA4115"
-      studyPoints="7.5"/>
+      studyPoints="7.5">
+    <courseInstances
+        year="2017"/>
+  </courses>
   <courses name="Informasjonssystemer"
       code="TDT4175"
-      studyPoints="7.5"/>
+      studyPoints="7.5">
+    <courseInstances
+        year="2018"
+        semester="Autumn"/>
+  </courses>
   <courses name="Kontraktsrett og kontraktsforhandlinger"
       code="TIØ4215"
-      studyPoints="7.5"/>
+      studyPoints="7.5">
+    <courseInstances
+        year="2019"
+        semester="Autumn"/>
+  </courses>
   <courses name="Metoder for forskningsbasert innovasjon i IT"
       code="IT3010"
       studyPoints="7.5"/>
+  <courses name="Exphil"
+      code="EXPH0004"
+      studyPoints="7.5">
+    <courseInstances
+        year="2016"
+        semester="Autumn"/>
+  </courses>
+  <courses name="HMS-kurs for 1.årsstudenter"
+      code="HMS0002"
+      studyPoints="7.5">
+    <courseInstances
+        year="2016"
+        semester="Autumn"/>
+  </courses>
+  <courses name="Diskret matematikk"
+      code="TMA4140"
+      studyPoints="7.5">
+    <courseInstances
+        year="2016"
+        semester="Autumn"/>
+  </courses>
+  <courses name="Objektorientert programmering"
+      code="TDT4100"
+      studyPoints="7.5">
+    <courseInstances
+        year="2017"/>
+  </courses>
+  <courses name="Programmeringslab for datateknologi"
+      code="TDT4112"
+      studyPoints="7.5">
+    <courseInstances
+        year="2017"/>
+  </courses>
+  <courses name="Krets- og digitalteknikk"
+      code="TMA4115"
+      studyPoints="7.5">
+    <courseInstances
+        year="2017"/>
+  </courses>
+  <courses name="Introduksjon til kunstig intelligens"
+      code="TDT4136"
+      studyPoints="7.5">
+    <courseInstances
+        year="2018"
+        semester="Autumn"/>
+  </courses>
+  <courses name="Matematikk 4D"
+      code="TMA4135"
+      studyPoints="7.5">
+    <courseInstances
+        year="2018"
+        semester="Autumn"/>
+  </courses>
+  <courses name="Webutvikling"
+      code="IT2810"
+      studyPoints="7.5">
+    <courseInstances
+        year="2018"
+        semester="Autumn"/>
+  </courses>
   <studies name="Datateknologi"
       code="MTDT">
     <studyInstances
@@ -54,10 +114,12 @@
           <nextYear
               programName="Programvaresystemer">
             <nextYear
-                programName="Programvareutvikling">
-            </nextYear>
+                programName="Programvareutvikling"/>
             <nextYear
                 programName="Interaksjonsdesign og spillteknologi"/>
+            <springSemester/>
+            <autumnSemester
+                courses="//@courses.3/@courseInstances.0 //@courses.12/@courseInstances.0 //@courses.13/@courseInstances.0 //@courses.14/@courseInstances.0"/>
           </nextYear>
           <nextYear
               programName="Algoritmer og datamaskiner"/>
@@ -67,9 +129,9 @@
               programName="Databaser og søk"/>
         </nextYear>
         <springSemester
-            courses="//@courseInstances.2"/>
-        <fallSemester
-            courses="//@courseInstances.1"/>
+            courses="//@courses.2/@courseInstances.0 //@courses.9/@courseInstances.0 //@courses.10/@courseInstances.0 //@courses.11/@courseInstances.0"/>
+        <autumnSemester
+            courses="//@courses.1/@courseInstances.0 //@courses.6/@courseInstances.0 //@courses.8/@courseInstances.0 //@courses.7/@courseInstances.0"/>
       </startYear>
     </studyInstances>
   </studies>
