@@ -12,6 +12,8 @@ For the OclInEcore plugin: https://wiki.eclipse.org/OCL/OCLinEcore#Registration
 Some helpful stuff at 
 [https://wiki.eclipse.org/EMF/FAQ#I_want_to_use_EMF.2C_SDO.2C_or_XSD_in_my_standalone_project.2C_or_include_only_a_working_subset_of_the_code._What_libraries_.28jar_files.29_do_I_need_in_my_CLASSPATH.3F](eclipse wiki).  
 Acceleo AQL documentation: https://www.eclipse.org/acceleo/documentation/  
+For AQL validation in Ecore to work in Eclipse `.xmi`-files, install the software `Acceleo Query SDK`; 
+otherwise Eclipse will complain that the uri for validation is not registered: `"value is not a registered validation delegate"`.
 
 
 ![uml of ecore](docs/studies.ecore.png)
